@@ -1,0 +1,402 @@
+
+//course-instructor
+.course-blur-shape {
+    width: 569px;
+    height: 569px;
+    background: #8e66ff;
+    opacity: 0.05;
+    filter: 50px;
+    position: absolute;
+    -webkit-filter: blur(50px);
+    right: 13%;
+    top: 150px;
+    @media #{$md} {
+        display: none;
+    }
+    @media #{$xs} {
+        display: none;
+    }
+}
+.course-instructor {
+    @media #{$laptop} {
+        margin: 0 0 0 0;
+    }
+
+    @media #{$lg} {
+        margin: 0 0 0 0;
+    }
+
+    @media #{$md} {
+        margin: 0 0 0 0;
+    }
+
+    @media #{$xs} {
+        margin: 0 0 0 0;
+    }
+}
+.z-instructors {
+    &__thumb {
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        & img {
+            width: 100%;
+        }
+        & .social-media {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            width: 100%;
+            padding: 27px 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            
+
+            @include transition(.3s);
+            @media #{$laptop} {
+                padding: 27px 10px;
+            }
+            & a {
+                transform: translateY(80px);
+                &:first-child {
+                     @include transition(.3s);
+                }
+                &:nth-child(2) {
+                     @include transition(.6s);
+                }
+                &:nth-child(3) {
+                     @include transition(.9s);
+                }
+                &:last-child {
+                     @include transition(1.2s);
+                }
+                &:hover {
+                    color: $white;
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+    &:hover {
+       & .social-media {
+            border-radius: 5px;
+            background: transparent;
+            /* Note: currently only Safari supports backdrop-filter */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -moz-backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.05);
+            /* (plus shape's fill blended on top as a separate layer with 5% opacity) */
+
+           & a {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.social-media {
+   & a {
+        color: $theme-color;
+        font-size: 19px;
+        background-color: $white;
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin: 0 5px;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 50%;
+        @media #{$xs} {
+           width: 40px; 
+           height: 40px;
+           margin: 0 3px;
+           line-height: 40px;
+        }
+    }
+} 
+
+
+
+.nav-style-two {
+   & .owl-nav {
+       position: absolute;
+       z-index: 2;
+       left: auto;
+       bottom: auto;
+       top: -120px;
+       right: 55px;
+   
+        @media #{$md} {
+             left: 0;
+             bottom: 0;
+             top: auto;
+             right: 0;
+             margin: 0 auto;
+             text-align: center;
+        }
+        @media #{$xs} {
+             left: 0;
+             bottom: 0;
+             top: auto;
+             right: 0;
+             margin: 0 auto;
+             text-align: center;
+        }
+        & button.owl-prev,
+        & button.owl-next {
+            color: $white;
+            width: 60px;
+            height: 60px;
+            background: $theme-color;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 65px;
+            display: inline-block;
+            position: absolute;
+            z-index: 1;
+            & i {
+                color: $white;
+                font-size: 18px;
+            }
+            &:hover {
+                background-color: rgba(255, 114, 58, 0.2);
+                & i {
+                    color: $theme-color;
+                }
+            }
+        }
+         & .owl-prev {
+             right: 0;
+             background-color: rgba(255, 114, 58, 0.2) !important;
+             & i {
+                 color: $theme-color !important;
+             }
+             &:hover {
+                 background-color: $theme-color !important;
+                 & i {
+                     color: $white !important;
+                 }
+             }
+         }
+         & .owl-next {
+             & i {
+                 color: $white !important;
+                 opacity: 1 !important;
+             }
+             &:hover {
+                & i {
+                    color: $theme-color !important;
+                    opacity: 1 !important;
+                }
+             }
+         }
+    }
+}
+.nav-style {
+    & .owl-nav {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        left: auto;
+    }
+}
+
+//z-instructors-02
+.z-instructors-02 {
+   & .z-instructors__content {
+       background: $theme-color;
+       padding: 70px 0 25px 0;
+       border-top-right-radius: 50%;
+       border-top-left-radius: 50%;
+       position: absolute;
+       left: 0;
+       right: 0;
+       bottom: -194px;
+       opacity: 0;
+       visibility: hidden;
+       z-index: 2;
+       @include transition(.5s);
+
+        & .semi-title {
+            color: $white;
+        }
+        & p {
+            color: $white;
+            margin-bottom: 10px;
+            & span {
+                border-left: 1px solid $white;
+                padding-left: 15px;
+                margin-left: 15px;
+            }
+        }
+        .social-media {
+            & a {
+                color: $white;
+                font-size: 19px;
+                background-color: transparent;
+                width: unset;
+                height: unset;
+                margin: 0 12px;
+                &:hover {
+                    color: $theme-color2;
+                }
+            }
+        } 
+    }
+    &:hover {
+       & .social-media {
+            background-color: transparent;
+        }
+        & .z-instructors__content {
+            opacity: 1;
+            visibility: visible;
+            bottom: 30px;
+        }
+    }
+}
+
+.nav-style-three {
+    & .owl-nav {
+        left: 0;
+        right: 0;
+        top: 39%;
+        transform: translateY(-50%);
+        position: absolute;
+        z-index: 1;
+        @media #{$laptop} {
+            display: none
+        }
+       & .owl-prev {
+            left: -90px;
+            background-color: rgba(255, 114, 58, 0.2);
+            &:hover {
+                background-color: rgba(255, 114, 58, 0.2);
+                & i {
+                    color: $white;
+                }
+            }
+        }
+        & .owl-next {
+            left: auto;
+            right: -90px;
+        }
+    }
+} 
+
+//instructor-profile
+.instructor-profile-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 582px;
+    border-radius: 10px;
+    @media #{$md} {
+        min-height: 450px;
+    }
+    @media #{$xs} {
+        min-height: 400px;
+    }
+}
+.instructor-profile {
+    & h2 {
+        font-size: 32px;
+        border-bottom: 1px solid rgba(164, 157, 157, 0.2);
+        padding-bottom: 25px;
+        margin-bottom: 40px;
+    }
+   & .star-icon {
+        & a {
+            color: $theme-color;
+            font-size: 25px;
+        }
+    } 
+}
+
+.profile-list {
+    overflow: hidden;
+    & li {
+        font-size: 18px;
+        float: left;
+        width: 48%;
+        margin-bottom: 20px;
+        @media #{$laptop} {
+            font-size: 16px;
+        }
+        @media #{$xs} {
+            width: 100%;
+        }
+        & span {
+            color: $heding;
+        }
+    }
+    .social-media a {
+        font-size: 15px;
+        background-color: rgba(255, 114, 58, 0.1);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 0 2px;
+        line-height: 30px;
+        &:hover {
+            color: $white;
+            background-color: $theme-color;
+        }
+    }
+} 
+
+
+.work-progress {
+    & li {
+        display: inline-block;
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @media #{$xs} {
+            margin-right: 0;
+            margin: 0 10px;
+        }
+    }
+} 
+.chart1 {
+    position: relative;
+    z-index: 1;
+    display:inline-block;
+}
+.progress-content {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    & h6 {
+        color: $heding;
+        font-size: 16px;
+    }
+    & b {
+        font-size: 16px;
+        color: $heding;
+    }
+} 
+
+
+.total-stu {
+    border-top: 1px solid rgba(164, 157, 157, 0.2);
+    & span {
+        @media #{$xs} {
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+    & img {
+        transform: translateY(-2px);
+        margin-right: 5px;
+    }
+}

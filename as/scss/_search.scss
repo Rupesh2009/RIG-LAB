@@ -1,0 +1,121 @@
+/* Menu Search
+-------------------------------------------------------*/
+.header-2-icon {
+	color: $white;
+}
+.nav-search.search-trigger.header-2-icon {
+	color: $white;
+	display: inline-block;
+}
+.nav-search {
+	position: relative;
+	display: block;
+	color: inherit;
+  }
+  
+  .nav-search:hover {
+	color: inherit;
+  }
+  
+  .search-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 121;
+	background: rgba(0,0,0,.9);
+  }
+  
+  .search-wrap .search-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+  }
+  .search-wrap .search-cell {
+	  position: absolute;
+	  top: 50%;
+	  width: 100%;
+	  transform: translateY(-50%);
+  }
+  
+  .search-wrap .search-field-holder {
+	width: 50%;
+	margin: auto;
+	position: relative;
+	animation: slideInUp .3s;
+  }
+  
+  .search-wrap .main-search-input {
+	  width: 100%;
+	  height: 70px;
+	  border: 0;
+	  padding: 0 50px;
+	  text-transform: uppercase;
+	  background: transparent;
+	  font-size: 25px;
+	  color: #fff;
+	  border-bottom: 2px solid #898989;
+	  text-align: center;
+	  letter-spacing: 2px;
+  }
+  
+  .search-wrap input.form-control,
+  .search-wrap input.form-control:focus {
+	background-color: #fff;
+  }
+  
+  @keyframes slideInUp {
+	from {
+	  -webkit-transform: translate3d(0, 100%, 0);
+	  transform: translate3d(0, 100%, 0);
+	}
+	to {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+  
+  @-webkit-keyframes slideInUp {
+	from {
+	  -webkit-transform: translate3d(0, 100%, 0);
+	  transform: translate3d(0, 100%, 0);
+	}
+	to {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+  
+  input.main-search-input::-webkit-input-placeholder {
+	color: #fff;
+	font-size: 25px;
+  }
+  
+  input.main-search-input:-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+	font-size: 25px;
+  }
+  
+  input.main-search-input::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+	font-size: 25px;
+  }
+  
+  input.main-search-input:-ms-input-placeholder {
+	color: #fff;
+	font-size: 25px;
+  }
+  
+  .search-close {
+	  position: absolute;
+	  top: 50px;
+	  right: 50px;
+	  font-size: 30px;
+	  color: #fff;
+	  cursor: pointer;
+  }

@@ -1,0 +1,123 @@
+
+/** instagram-section **/
+
+.instagram-section{
+  position: relative;
+}
+
+.instagram-section .outer-container{
+  position: relative;
+  margin: 0px 15px;
+}
+
+.instagram-section .image-column{
+  padding: 0px;
+}
+
+.instagram-section .text-box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+.instagram-section .text-box h5{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.instagram-section .text-box h5 a{
+  position: relative;
+  display: inline-block;
+  background: #FAFDFF;
+  border-radius: 5px;
+  color: var(--title-color);
+  padding: 16px 40px 16px 80px;
+}
+
+.instagram-section .text-box h5 a img{
+  position: absolute;
+  left: 40px;
+  top: 15px;
+}
+
+.instagram-section .image{
+  position: relative;
+  display: block;
+}
+
+.instagram-section .image img{
+  width: 100%;
+}
+
+
+/** rtl-css **/
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+  .instagram-section .text-box{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

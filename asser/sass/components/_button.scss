@@ -1,0 +1,64 @@
+/* ================================= Button Css Start =========================== */
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: none;
+    background-color: none;
+    border-color: none;
+}
+
+.btn {
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-family: var(--body-font);
+    color: hsl(var(--white)) !important;
+    z-index: 1;
+    line-height: 1;
+    padding: 14px 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    &:hover, &:focus, &:focus-visible {
+        box-shadow: none !important;
+    }
+    &:active {
+        transform: scale(1.01);
+    }
+    // ============= Different Color Button Start ==================
+    &-main {
+        background-color: hsl(var(--main)) !important;
+        border-color: hsl(var(--main)) !important;
+        &:hover {
+            background-color: var(--main-800) !important;
+            border-color: var(--main-800) !important;
+        }
+    }
+    &-outline-main {
+        background-color: transparent !important;
+        border-color: hsl(var(--main)) !important;
+        color: hsl(var(--main)) !important;
+        &:hover {
+            background-color: hsl(var(--main)) !important;
+            border-color: hsl(var(--main)) !important;
+            color: hsl(var(--white)) !important;
+        }
+    }
+    &-gray {
+        background-color: hsl(var(--main)) !important;
+        border-color: hsl(var(--main)) !important;
+        &:hover {
+            background-color: var(--main-800) !important;
+            border-color: var(--main-800) !important;
+        }
+    }
+    &-outline-gray {
+        background-color: transparent !important;
+        border-color: var(--gray-100) !important;
+        color: var(--gray-200) !important;
+        &:hover {
+            background-color: var(--gray-200) !important;
+            border-color: var(--gray-200) !important;
+            color: hsl(var(--white)) !important;
+        }
+    }
+}
+/* ================================= Button Css End =========================== */

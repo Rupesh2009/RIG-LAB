@@ -1,0 +1,19 @@
+/* Font Size Class Start */
+.text {
+    &-inherit {
+        font-size: inherit;
+    }
+}
+
+@each $property, $value in $font-sizes {
+    .text-#{$property} {
+      font-size: $value !important;
+    }
+}  
+
+@each $property, $value in $spaces {
+    .text-#{$property} {
+      font-size: $value !important;
+    }
+}  
+/* Font Size Class End */

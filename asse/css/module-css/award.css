@@ -1,0 +1,157 @@
+
+/** award-section **/
+
+.award-section{
+  position: relative;
+}
+
+.award-section .table-outer{
+  position:relative;
+  width:100%;
+  overflow-x: auto;
+}
+
+.award-section .cart-table{
+  width:100%;
+  min-width:1100px;
+}
+
+.award-section .cart-table tr{
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.award-section .cart-table tr:last-child{
+  border-bottom: none;
+}
+
+.award-section .cart-table tr td{
+  position: relative;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: var(--title-font);
+  color: #fff;
+  font-weight: 500;
+  padding: 30px 0px;
+}
+
+.award-section .cart-table tr td:first-child{
+  min-width: 145px;
+}
+
+.award-section .cart-table tr td:last-child{
+  text-align: right;
+}
+
+.award-section .pattern-layer{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/** award-style-two **/
+
+.award-style-two{
+  position: relative;
+}
+
+.award-style-two .award-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/** rtl-css **/
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+  .sec-title h2 br{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .award-section{
+    padding-bottom: 40px;
+  }
+
+  .award-style-two{
+    padding-bottom: 70px;
+  }
+
+  .award-style-two .award-list{
+    display: block;
+  }
+
+  .award-style-two .award-list li{
+    margin-bottom: 30px;
+  }
+
+  .award-style-two .award-list li:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  
+}
+
+@media only screen and (max-width: 499px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+// background
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .bg-#{$color}-#{$shade} {
+        background-color: var(--#{$color}-#{$shade}) !important;
+      }
+    }
+}
+
+// hover background
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .hover-bg-#{$color}-#{$shade} {
+        &:hover {
+            background-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+}
+
+.bg {
+  &-white {
+    background-color: hsl(var(--white)) !important;
+  }
+}

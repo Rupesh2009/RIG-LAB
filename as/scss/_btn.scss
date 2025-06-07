@@ -1,0 +1,71 @@
+/*--
+	-theme-btn
+----------------------------------------*/
+.theme_btn {
+    overflow: hidden;
+    color: $white;
+    background: $theme-color;
+    font-size: 16px;
+    font-family: $manrop;
+    font-weight: 400;
+    line-height: 1;
+    padding: 18px 35px;
+    display: inline-block;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        color: $white;
+        background: #e75115;
+    }
+}
+
+
+
+//border-btn
+.border_btn {
+    background: transparent;
+    border: 2px solid $theme-color;
+    color: $theme-color;
+    padding: 15px 38px;
+    @include transition(.3s);
+    &:hover, &.active {
+        // background: $theme-color;
+        color: $white;
+        box-shadow: 5px 15px 60px rgba(255, 114, 58, 0.3);
+        border-color: #e75115;
+    }
+    &.active {
+        border-color: $theme-color;
+        background-color: $theme-color;
+        box-shadow: 5px 15px 60px rgba(255, 114, 58, 0.3);
+        &:hover {
+            color: $theme-color;
+            background-color: transparent;
+            box-shadow: 0;
+        }
+    }
+}
+
+
+//.blog_btn 
+.blog_btn {
+    color: $heding;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 1px solid $heding;
+    line-height: 1;
+    &:hover {
+        color: $theme-color;
+        border-color: $theme-color;
+    }
+}
+
+
+.free_btn {
+    padding: 17px 38px;
+}

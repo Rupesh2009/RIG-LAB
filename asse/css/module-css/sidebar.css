@@ -1,0 +1,376 @@
+
+.default-sidebar{
+  position: relative;
+  background: rgba(250, 250, 251, 1);
+  padding: 50px 40px 60px 40px;
+}
+
+.default-sidebar .widget-title{
+  position: relative;
+  display: block;
+}
+
+.default-sidebar .widget-title h3{
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.default-sidebar .search-widget .search-inner .form-group{
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.default-sidebar .search-widget .search-inner .form-group input[type='search']{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #6A6A6A;
+  padding: 10px 50px 10px 30px;
+}
+
+.default-sidebar .search-widget .search-inner .form-group button[type='submit']{
+  position: absolute;
+  top: 21px;
+  right: 26px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 500ms ease;
+}
+
+.default-sidebar .search-widget .search-inner .form-group input:focus{
+
+}
+
+.default-sidebar .search-widget .search-inner .form-group input:focus + button,
+.default-sidebar .search-widget .search-inner .form-group button:hover{
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.default-sidebar .category-widget .category-list li{
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.default-sidebar .category-widget .category-list li:last-child{
+  margin-bottom: 0px;
+}
+
+.default-sidebar .category-widget .category-list li a{
+  position: relative;
+  display: inline-block;
+  color: #111;
+}
+
+.default-sidebar .category-widget .category-list li a:hover{
+  padding-left: 17px;
+}
+
+.default-sidebar .category-widget .category-list li a:before{
+  position: absolute;
+  content: '\e928';
+  font-family: 'icomoon';
+  font-size: 12px;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.default-sidebar .category-widget .category-list li a:hover:before{
+  opacity: 1;
+}
+
+.range-slider .input{
+  color:#111;
+  max-width: 75px;
+}
+
+.range-slider .input input{
+  background:none;
+  font-size: 14px;
+  color: #111;
+  font-weight: 500;
+  text-align:right;
+  width: 63px;
+}
+
+.range-slider .ui-widget.ui-widget-content{
+  height:5px;
+  border:none;
+  margin-bottom:25px;
+  background:#E9E9E9; 
+  border-radius: 5px;
+}
+
+.range-slider .ui-slider .ui-slider-range{
+  top:0px;
+  height:5px;
+}
+
+.range-slider .ui-widget-content .ui-state-default{
+  top:-8px;
+  width:20px;
+  height:20px;
+  border: none;
+  border-radius:50%;
+  cursor:pointer; 
+  margin-left: 0px;;
+}
+
+.range-slider .ui-widget-content .ui-state-default:before{
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+}
+
+.range-slider .theme-btn-one{
+  padding: 10px 24px 6px 23px;
+  box-shadow: none;
+}
+
+.shop-sidebar .filter-widget .theme-btn span{
+  padding: 8px 25px;
+}
+
+.shop-sidebar .filter-widget .range-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-sidebar .filter-widget .range-box .price-range{
+  position: relative;
+  display: flex;
+}
+
+.shop-sidebar .filter-widget .range-box p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+}
+
+.blog-sidebar .post-widget .post{
+  position: relative;
+  display: block;
+  padding-left: 110px;
+  padding-bottom: 35px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #E5E5E5;
+  min-height: 118px;
+}
+
+.blog-sidebar .post-widget .post:last-child{
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.blog-sidebar .post-widget .post .post-thumb{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+.blog-sidebar .post-widget .post .post-thumb img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog-sidebar .post-widget .post h5{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.blog-sidebar .post-widget .post h5 a{
+  display: inline-block;
+  color: var(--title-color);
+}
+
+.blog-sidebar .post-widget .post h5 a:hover{
+
+}
+
+.blog-sidebar .post-widget .post .post-date{
+  position: relative;
+  display: block;
+  font-size: 15px;
+  color: #6A6A6A;
+  padding-left: 24px;
+}
+
+.blog-sidebar .post-widget .post .post-date i{
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-size: 16px;
+}
+
+.blog-sidebar .gallery-widget .image-list{
+  position: relative;
+  margin: 0px -5px;
+}
+
+.blog-sidebar .gallery-widget .image-list li{
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 0px 5px 10px 5px;
+  border-radius: 5px;
+}
+
+.blog-sidebar .gallery-widget .image-list li img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.blog-sidebar .tags-widget .tags-list{
+  position: relative;
+  margin: 0px -5px;
+}
+
+.blog-sidebar .tags-widget .tags-list li{
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 0px 5px 10px 5px;
+}
+
+.blog-sidebar .tags-widget .tags-list li a{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6A6A6A;
+  background: #fff;
+  padding: 9px 18px;
+  border-radius: 5px;
+}
+
+.blog-sidebar .tags-widget .tags-list li a:hover{
+  color: #fff;
+}
+
+
+/** rtl-css **/
+
+.rtl .blog-sidebar .post-widget .post{
+  padding-left: 0px;
+  padding-right: 110px;
+}
+
+.rtl .blog-sidebar .post-widget .post .post-thumb{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .blog-sidebar .post-widget .post .post-date{
+  padding-left: 0px;
+  padding-right: 24px;
+}
+
+.rtl .blog-sidebar .post-widget .post .post-date i{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .blog-sidebar .tags-widget .tags-list li{
+  float: right;
+}
+
+.rtl .blog-sidebar .gallery-widget .image-list li{
+  float: right;
+}
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+  .shop-sidebar{
+    margin-bottom: 30px;
+  }
+
+  .default-sidebar{
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .default-sidebar{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  
+}
+
+@media only screen and (max-width: 499px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

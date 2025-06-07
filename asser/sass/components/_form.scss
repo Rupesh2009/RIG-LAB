@@ -1,0 +1,297 @@
+/* ================================= Form Css Start =========================== */
+/* input Start */
+.form-control {
+    border-radius: 8px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    padding: 13px 16px;
+    background-color: transparent !important; 
+    border: 1px solid var(--gray-100);
+    color: hsl(var(--heading-color)); 
+    line-height: 1;
+    &::placeholder {
+        color: var(--gray-300);
+        transition: .2s linear;
+        font-weight: 400;
+        font-size: rem(15px);
+    }
+    &:focus {
+        border-color: hsl(var(--main)); 
+        box-shadow: none !important;
+        &::placeholder {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    &[type="password"] {
+        color: var(--gray-600);
+        &:focus {
+            color: var(--gray-600); 
+        }
+    }
+}
+
+.placeholder {
+    &-12 {
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+    &-13 {
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+    &-14 {
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+    &-15 {
+        &::placeholder {
+            font-size: 15px;
+        }
+    }
+    &-16 {
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+    &-17 {
+        &::placeholder {
+            font-size: 17px;
+        }
+    }
+    &-18 {
+        &::placeholder {
+            font-size: 18px;
+        }
+    }
+}
+/* input End */
+
+/* input with icon */
+.input-icon {
+    position: absolute;
+    inset-inline-start: 16px;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-600); 
+    &--right {
+        inset-inline-end: 16px;
+        inset-inline-start: auto;
+    }
+}
+
+// toggle password 
+.toggle-password {
+    &.active::before {
+        content: "\e220" !important;
+    }
+}
+/* input icon */
+
+/* Form Select */  
+.select-has-icon {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "\e136";
+        font-family: "Phosphor";
+        inset-inline-start: 8px;
+        inset-block-start: 50%;
+        transform: translateY(-50%);
+        font-weight: 900;
+        color: hsl(var(--main)); 
+        transition: 0.2s linear;
+        pointer-events: none;
+        color: hsl(var(--black)) !important; 
+    }
+    &.icon-black::before {
+        -webkit-text-fill-color: hsl(var(--black)); 
+    }
+    select {
+        background-image: none;
+        -webkit-appearance: none;
+        padding: 20px 24px;
+        font-size: 18px;
+        @include md-screen {
+            padding: 15px 24px;
+        }
+        @include sm-screen {
+            padding: 12px 16px;
+        }
+    }
+    .common-input {
+        padding-inline-end: 30px !important;
+    }
+} 
+select, input[type="date"] {
+    color: var(--gray-300) !important;
+}
+/* Form Select End */
+
+
+/* Autofill Css */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, 
+textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, textarea:-webkit-autofill:active {
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: hsl(var(--heading-color)) !important;
+    caret-color: hsl(var(--heading-color));
+}
+/* Autofill Css End */
+
+/* Number Arrow None */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+/* Custom Checkbox & Radio Css Start */
+.form-check {
+    @extend .flex-align; 
+    margin-block-end: 16px;
+    &:last-child {
+        margin-block-end: 0;
+    }
+    a {
+        display: inline;
+    }
+    &.form-radio {
+        .form-check-input {
+            border-radius: 50%;
+            &:checked { 
+                background-color: transparent !important;
+                &::after {
+                    visibility: visible;
+                    opacity: 1;
+                    -webkit-transform: translate(-50%, -50%) scale(1);
+                    transform: translate(-50%, -50%) scale(1);
+                }
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .form-check-input {
+        transition: .2s linear;
+        box-shadow: none;
+        background-color: transparent;
+        box-shadow: none !important;
+        border: 0;
+        position: relative;
+        border-radius: 3px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid hsl(var(--black) / .4);   
+        cursor: pointer;
+        transition: .2s linear;
+        margin-block-start: 0;
+        &::before {
+            position: absolute;
+            content: "\E182";
+            font-family: "Phosphor";
+            font-weight: 900;
+            color: hsl(var(--white)); 
+            font-size: 12px;
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
+            transform: translate(-50%, -50%);
+            transition: .2s linear;
+            visibility: hidden;
+            opacity: 0;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            inset-block-start: 50%;
+            inset-inline-start: 50%;
+            -webkit-transform: translate(-50%, -50%) scale(.2);
+            transform: translate(-50%, -50%) scale(.2);
+            width: 10px;
+            height: 10px;
+            background-color: hsl(var(--main));
+            border-radius: 50%;
+            transition: .2s linear;
+            z-index: 1;
+            visibility: hidden;
+            opacity: 0;
+        }
+        &:checked {
+            background-color: hsl(var(--main)) !important;
+            border-color: hsl(var(--main)) !important;
+            box-shadow: none;
+            &[type=checkbox] {
+                background-image:none;
+            }
+            &::before {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .form-check-label {
+        font-weight: 500;
+        width: calc(100% - 18px);
+        padding-inline-start: 12px;
+        cursor: pointer;
+        color: hsl(var(--heading-color)); 
+    }
+    label {
+        @include xsm-screen {
+             
+        }
+    }
+    a {
+        @include xsm-screen {
+             
+        }
+    }
+}
+/* Custom Checkbox & Radio Css End */
+
+/* Switch Css Start */
+.form-switch {
+    padding-inline-start: 0;
+    .form-check-input {
+      box-shadow: none !important;  
+      margin: 0;
+      position: relative;
+      background-color: var(--gray-100);
+      border: 0;
+      background-image: none !important;
+      width: 30px;
+      height: 18px;
+      &:checked {
+        background-color: var(--primary-600);
+        &::before {
+          left: calc(100% - 15px);
+          transition: .2s linear;
+        }
+      }    
+      &::before {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 3px;
+        transition: .2s linear;
+      }
+    }
+  }
+  /* Switch Css End */
+/* ================================= Form Css End =========================== */

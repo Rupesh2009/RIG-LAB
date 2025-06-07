@@ -1,0 +1,121 @@
+/* ================================= Typography Css Start =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  color: hsl(var(--body-color));
+  word-break: break-word;
+  background-color: hsl(var(--white));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: rem(15px);
+}
+
+p {
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.6;
+}
+
+span {
+  display: inline-block;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin: 0 0 16px 0;
+  font-family: var(--heading-font);
+  color: hsl(var(--heading-color));
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: var(--heading-one);
+  line-height: 52px;
+}
+h2, .h2 {
+  font-size: var(--heading-two);
+  line-height: 44px;
+}
+h3, .h3 {
+  font-size: var(--heading-three);
+  line-height: 36px;
+}
+h4, .h4 {
+  font-size: var(--heading-four);
+  line-height: 30px;
+}
+h5, .h5 {
+  font-size: var(--heading-five);
+  line-height: 24px;
+}
+h6, .h6 {
+  font-size: var(--heading-six);
+  line-height: 21px;
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  transition: 0.2s linear;
+  line-height: inherit;
+  &:hover {
+    color: hsl(var(--main));
+  }
+}
+
+a {
+  display: inline-block;
+  transition: 0.2s linear;
+  text-decoration: none;
+  color: #0661e9;
+}
+a:hover {
+  color: #1d72f2;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+select {
+  cursor: pointer;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+button {
+  border: 0;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.form-select:focus {
+  outline: 0;
+  box-shadow: none;
+}
+/* ================================= Typography Css End =========================== */

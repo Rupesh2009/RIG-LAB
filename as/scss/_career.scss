@@ -1,0 +1,139 @@
+//what-looking-for
+.what-blur-shape-one {
+   width: 569px;
+   height: 569px;
+   background: #f14d5d;
+   opacity: 0.05;
+    filter: 50px;
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    position: absolute;
+    left: 26%;
+    z-index: -1;
+    top: 170px;
+    @media #{$md} {
+        display: none;
+    }
+
+    @media #{$xs} {
+        display: none;
+    }
+}
+.what-blur-shape-two {
+    width: 569px;
+    height: 569px;
+    background: #8e66ff;
+    opacity: 0.05;
+    filter: 50px;
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    position: absolute;
+    right: 19%;
+    z-index: -1;
+    bottom: 133px;
+    @media #{$md} {
+        display: none;
+    }
+
+    @media #{$xs} {
+        display: none;
+    }
+}
+.what-look-bg {
+    margin: 0 100px 0 100px;
+    @media #{$laptop} {
+         margin: 0 0 0 0;
+    }
+    @media #{$lg} {
+         margin: 0 0 0 0;
+    }
+    @media #{$md} {
+         margin: 0 0 0 0;
+    }
+    @media #{$xs} {
+         margin: 0 0 0 0;
+    }
+}
+.what-box {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 50px 45px;
+    @media #{$laptop} {
+        padding: 50px 40px;
+    }
+    @media #{$md} {
+        padding: 50px 15px;
+    }
+    @media #{$xs} {
+        padding: 50px 15px;
+    }
+    &__icon {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 75px;
+            height: 75px;
+            background: rgba(27, 33, 47, 0.1);
+            border-radius: 50%;
+            left: -12px;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+
+    h3 {
+        font-size: 34px;
+        margin-bottom: 25px;
+         @media #{$xs} {
+             font-size: 32px;
+             line-height: 1.4;
+         }
+    }
+    & p {
+        margin-bottom: 30px;
+    }
+    &:hover {
+        .what-box__icon {
+            transform: translateY(-10px);
+        }
+    }
+} 
+
+
+//wb-icon-2
+.wb-icon-2 {
+    &::before {
+        display: none;
+    }
+}
+
+
+.what-blur-bg-three {
+    width: 851px;
+    height: 851px;
+    background: #f14d5d;
+    opacity: 0.03;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    position: absolute;
+    left: 18%;
+    top: 110px;
+    z-index: -1;
+    @media #{$lg} {
+        display: none;
+    }
+    @media #{$md} {
+        display: none;
+    }
+    @media #{$xs} {
+        display: none;
+    }
+}
+
+

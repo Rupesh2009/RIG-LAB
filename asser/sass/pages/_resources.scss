@@ -1,0 +1,35 @@
+/* ============================= List Grid View Css Start ============================ */
+.list-grid-view {
+    .activePage {
+       > a {
+            color: var(--main-600) !important;
+            .ph-rows {
+                &::before {
+                    content: "\E5A2 ";
+                }
+            }
+            .ph-squares-four {
+                &::before {
+                    content: "\E464 ";
+                }
+            }
+        }
+    }
+}
+
+.resource-item-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, 90px);
+    grid-gap: 32px;
+    &:not(:last-child) {
+        border-bottom: 1px solid var(--gray-100);
+        margin-block-end: 16px;
+        padding-block-end: 16px;
+    }
+}
+
+.list-view-btn.active, .grid-view-btn.active {
+    color: var(--main-600) !important;
+}
+/* ============================= List Grid View Css End ============================ */

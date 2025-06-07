@@ -1,0 +1,49 @@
+
+
+# BEGIN cPanel-generated php ini directives, do not edit
+<IfModule php8_module>
+   php_value upload_max_filesize 20M
+   php_value post_max_size 25M
+</IfModule>
+<IfModule lsapi_module>
+   php_value upload_max_filesize 20M
+   php_value post_max_size 25M
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # ✅ Redirect index or index.php to /dashboard
+  RewriteRule ^index$ /dashboard [R=301,L]
+  RewriteRule ^index\.php$ /dashboard [R=301,L]
+
+  # ✅ Exclude upload.php, uploadd.php, and ask.php from clean URLs
+  RewriteCond %{REQUEST_URI} !^/uploadd\.php$
+  RewriteCond %{REQUEST_URI} !^/ask\.php$
+
+  # ✅ Remove .php extension for other files
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.php -f
+  RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L]
+
+  # ✅ Redirect direct .php URLs to clean ones (except excluded)
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php\sHTTP [NC]
+  RewriteCond %{REQUEST_URI} !^/upload\.php$
+  RewriteCond %{REQUEST_URI} !^/uploadd\.php$
+  RewriteCond %{REQUEST_URI} !^/ask\.php$
+  RewriteCond %{REQUEST_URI} !^/update_status\.php$
+  RewriteCond %{REQUEST_URI} !^/setting\.php$
+  RewriteRule ^ %1 [R=301,L]
+</IfModule>
+
+# ✅ Custom error pages
+ErrorDocument 404 /auth-404.php
+ErrorDocument 500 /auth-500.php
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,42 @@
+/* Share Social Icons Css Start */
+.share-social {
+    &__icons {
+        visibility: hidden;
+        opacity: 0; 
+        margin-top: 16px;
+        transition: .2s linear;
+        z-index: 9;
+        &.left {
+            inset-inline-start: calc(100% - 16px) !important;
+            inset-inline-end: auto !important;
+            &::before {
+                inset-inline-end: calc(100% - 20px);
+            }
+        }
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 8px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 14px;
+            height: 14px;
+            inset-block-start: -7px;
+            inset-inline-end: 5px;
+            transform: rotate(45deg);
+            background-color: hsl(var(--white));
+            border: 1px solid var(--gray-100);
+            border-radius: 3px;
+            border-bottom: 0;
+            border-right: 0;
+        }
+    }
+    &__button {
+        &.active {
+            color: var(--main-600) !important;
+        }
+    }
+}
+/* Share Social Icons Css End */

@@ -1,0 +1,101 @@
+/* Chatbot Container - Wider */
+.chat-container {
+    width: 100%; /* Increased width */
+    max-width: -1000px; /* Max width for large screens */
+    background-color: #16161a;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    align-items: center;
+}
+
+/* Chat Box - Message Area */
+#chat-box {
+    width: 100%;
+    height: 400px; /* Increased height */
+    overflow-y: auto;
+    background-color: #1c1c1f;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Bubbles */
+.message {
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin: 6px;
+    font-size: 15px;
+    word-wrap: break-word;
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+/* User Messages */
+.user-message {
+    background-color: ;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+/* Bot Messages */
+.bot-message {
+    background-color: #333;
+    color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+/* Input Box */
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #16161a;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #222;
+    width: 100%;
+}
+
+/* Input Field - Wider */
+#user-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Send Button - Adjusted Position */
+.send-btn {
+    background-color: #222;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    margin-left: 8px; /* Moves button slightly to the right */
+}
+
+.send-btn:hover {
+    background-color: #000000;
+}
+
+.send-btn svg {
+    width: 26px;
+    height: 26px;
+    color: rgb(255, 255, 255);
+}

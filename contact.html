@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIG LAB</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css">
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="ed-overlay group">
+        <div class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto"></div>
+    </div>
+
+
+    <!-- sidebar -->
+    <div class="ed-sidebar">
+        <div class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[100] overflow-auto">
+            <!-- heading -->
+            <div class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20">
+                <div class="logo flex justify-between items-center">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+
+                    <button type="button" class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edpurple"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="ed-header-nav-in-mobile"></div>
+        </div>
+    </div>
+
+
+    <!-- HEADER SECTION START -->
+    <header class="absolute z-[99] top-0 inset-x-[100px] xxl:inset-x-[30px] xl:inset-x-0 bg-white rounded-bl-[10px] rounded-br-[10px]">
+        <!-- top header -->
+        <div class="bg-edblue flex items-center justify-between lg:justify-center lg:gap-x-[20px]">
+            <!-- contacts -->
+            <div class="flex items-center gap-x-[32px] xl:gap-x-[15px] gap-y-[6px] py-[18px] pl-[30px] xl:pl-[10px] lg:pl-0 lg:order-2 sm:pt-0 sm:pb-[10px] xl:hidden">
+                <!-- single contact -->
+                <a href="mailto:info@example.com" class="flex items-center gap-x-[10px] font-light text-white/80">
+                    <span class="icon shrink-0 xl:hidden">
+                        <img src="assets/img/icon/mail.svg" alt="icon">
+                    </span>
+                    <span>info@example.com</span>
+                </a>
+                <!-- single contact -->
+                <a href="tel:+20866660112" class="flex items-center gap-x-[10px] font-light text-white/80">
+                    <span class="icon shrink-0 xl:hidden">
+                        <img src="assets/img/icon/phone.svg" alt="icon">
+                    </span>
+                    <span>+208-6666-0112</span>
+                </a>
+            </div>
+
+
+        </div>
+
+        <!-- bottom header -->
+        <div class="px-[30px] xxl:px-[15px] lg:px-[20px] py-[28px] lg:py-[18px] flex justify-between to-be-fixed">
+            <div class="logo xxs:max-w-[40%]"><a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo"></a></div>
+
+            <div class="flex lg:items-center lg:gap-[60px] xxs:gap-[30px]">
+                <div class="flex items-center gap-[100px] xl:gap-[30px] lg:gap-y-0">
+                    <!-- nav -->
+                    <div class="ed-header-nav-container" style="margin-right:480px">
+                        <ul class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xl:gap-x-[33px] font-kanit text-[17px] font-normal">
+                            <li class="has-sub-menu relative">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li><a href="about.html">About us</a></li>
+
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- mobile menu button -->
+                <button type="button" class="ed-mobile-menu-open-btn hidden lg:inline-block text-edblue text-[18px]"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <main>
+        <!-- BREADCRUMB SECTION START -->
+        <section class="pt-[327px] xl:pt-[287px] lg:pt-[237px] sm:pt-[200px] xxs:pt-[180px] pb-[158px] xl:pb-[118px] lg:pb-[98px] sm:pb-[68px] xs:pb-[48px] text-center bg-[url('../assets/img/breadcrumb-bg.jpg')] bg-no-repeat bg-cover bg-center relative z-[1] overflow-hidden before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <h1 class="font-semibold text-[clamp(35px,6vw,56px)] text-white">Contact us</h1>
+                <ul class="flex items-center justify-center gap-[10px] text-white">
+                    <li><a href="index.html" class="text-edyellow">Home</a></li>
+                    <li><span class="text-[12px]"><i class="fa-solid fa-angle-double-right"></i></span></li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+
+            <div class="vectors">
+                <img src="assets/img/breadcrumb-vector-1.svg" alt="vector" class="absolute -z-[1] pointer-events-none bottom-[34px] left-0 xl:left-auto xl:right-[90%]">
+                <img src="assets/img/breadcrumb-vector-2.svg" alt="vector" class="absolute -z-[1] pointer-events-none bottom-0 right-0 xl:right-auto xl:left-[60%]">
+            </div>
+        </section>
+        <!-- BREADCRUMB SECTION END -->
+        <!-- CONTACT SECTION START -->
+        <section class="py-[120px] xl:py-[80px] md:py-[60px]">
+            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                <div class="grid grid-cols-2 md:grid-cols-1 gap-[60px] xl:gap-[40px] items-center">
+                    <!-- left side contact infos -->
+                    <div class="rounded-[16px] overflow-hidden">
+                        <div class="bg-edpurple p-[40px] sm:p-[30px] xxs:p-[20px] space-y-[24px] text-[16px]">
+                            <!-- single contact info -->
+                            <div class="flex flex-wrap xxs:flex-col items-center xxs:items-start gap-[20px] gap-y-[10px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
+                                <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
+                                    <img src="assets/img/icon/call-msg.svg" alt="icon">
+                                </span>
+
+                                <div class="txt">
+                                    <span class="font-normal">Call Us 7/24</span>
+                                    <h4 class="font-medium text-[24px] xxs:text-[22px]"><a href="tel:+208-555-0112">+91 99993 76529</a></h4>
+                                </div>
+                            </div>
+
+                            <!-- single contact info -->
+                            <div class="flex flex-wrap xxs:flex-col items-center xxs:items-start gap-[20px] gap-y-[10px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
+                                <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
+                                    <img src="assets/img/icon/mail-at.svg" alt="icon">
+                                </span>
+
+                                <div class="txt">
+                                    <span class="font-normal">Make a Quote</span>
+                                    <h4 class="font-medium text-[24px] xxs:text-[22px]"><a href="mailto:eventek@gmail.com">rjha59500@gmail.com</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right side contact form -->
+                    <div>
+                        <h2 class="text-[40px] md:text-[35px] sm:text-[30px] xxs:text-[28px] font-semibold text-edblue mb-[7px]">Ready to Get Started?</h2>
+                        <p class="text-edgray font-normal text-[16px] mb-[38px]">Get in touch with us to innovate, collaborate, and create the future together!</p>
+
+                        <form action="#" class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] xs:gap-[20px] text-[16px]">
+                            <div>
+                                <label for="ed-contact-name" class="font-lato font-semibold text-edblue block mb-[12px]">Your Name*</label>
+                                <input type="text" name="name" id="ed-contact-name" placeholder="Your Name" class="border border-[#ECECEC] h-[55px] px-[20px] xs:px-[15px] rounded-[4px] w-full focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="ed-contact-email" class="font-lato font-semibold text-edblue block mb-[12px]">Your Email*</label>
+                                <input type="email" name="email" id="ed-contact-email" placeholder="Your Email" class="border border-[#ECECEC] h-[55px] px-[20px] xs:px-[15px] rounded-[4px] w-full focus:outline-none">
+                            </div>
+                            <div class="col-span-2 xxs:col-span-1">
+                                <label for="ed-contact-message" class="font-lato font-semibold text-edblue block mb-[12px]">Your Message*</label>
+                                <textarea name="message" id="ed-contact-message" placeholder="Your Message" class="border border-[#ECECEC] h-[145px] p-[20px] rounded-[4px] w-full focus:outline-none"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="bg-edpurple h-[55px] px-[24px] rounded-[10px] text-[16px] font-medium text-white hover:bg-edblue">Send Message <span class="icon pl-[10px]"><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SECTION END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="bg-edblue relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/img/footer-bg.jpg')] before:opacity-[7%] before:bg-no-repeat before:bg-cover before:bg-center text-white">
+        <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+            <!-- footer top -->
+            <div class="flex flex-wrap justify-between gap-[35px] pt-[100px] pb-[58px] border-b border-white/20">
+                <!-- footer about -->
+                <div class="max-w-[370px] xxs:max-w-full">
+                    <a href="index.html" class="inline-block mb-[23px]"><img src="assets/img/logo-light.png" alt="logo"></a>
+                    <p class="text-[#D9D9D9] mb-[19px]">RIG Lab pioneers AI for good, driving ethical innovation to solve real-world challenges, empower communities, and create a smarter, more sustainable future through research, collaboration, and technology-driven impact.</p>
+
+                    <ul class="space-y-[17px]">
+                        <li class="flex items-center gap-[8px]">
+                            <span class="icon"><img src="assets/img/call-icon-yellow.svg" alt="icon"></span>
+                            <a href="tel:+6108-666-0112" class="hover:text-edyellow">+91 99993 76529</a>
+                        </li>
+
+                        <li class="flex items-center gap-[8px]">
+                            <span class="icon"><img src="assets/img/message-yellow.svg" alt="icon"></span>
+                            <a href="mailto:info@gmail.com" class="hover:text-edyellow">rjha59500@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- footer widget -->
+                <div>
+                    <h6 class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">Quick Links</h6>
+
+                    <div class="space-y-[18px]">
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> About Us</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> Contact Us</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> FAQ’S</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> Login / Register</a>
+                    </div>
+                </div>
+
+                <!-- footer widget -->
+                <div>
+                    <h6 class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">AI Tools</h6>
+
+                    <div class="space-y-[18px]">
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> AI Image Classifier</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> AI Chatbot</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> AI Sign Language Interpreter</a>
+                        <a href="#" class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"><span class="icon"><img src="assets/img/double-arrow.svg" alt="icon"></span> Immersive Labs</a>
+                    </div>
+                </div>
+
+                <!-- footer widget -->
+                <div class="max-w-[300px]">
+                    <h6 class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">Newsletter</h6>
+
+                    <div>
+                        <p class="text-[#d9d9d9]/80 mb-[21px]">Sign up to get the latest updates on out intiative!</p>
+
+                        <!-- newsltr form -->
+                        <form class="border border-white/20 rounded-full flex h-[56px] p-[4px]">
+                            <input type="email" name="email" placeholder="Enter Email Address" class="text-[14px] bg-transparent w-full rounded-full focus:outline-none px-[20px]">
+                            <button class="bg-edyellow rounded-full aspect-square flex items-center justify-center hover:bg-edpurple"><img src="assets/img/icon/submit-icon.svg" alt="icon"></button>
+                        </form>
+
+                        <!-- footer bottom -->
+                        <div class="flex flex-wrap items-center justify-between gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9]">
+                            <p>&copy; All Copyright 2025 by RIG LAB</p>
+
+                            <div class="flex flex-wrap gap-[40px] xxs:gap-[15px]">
+                                <a href="#" class="hover:text-edyellow">Terms & Conditions</a>
+                                <a href="#" class="hover:text-edyellow">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+    <!-- js -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+/* ======================= Library Page Css Start ======================== */
+.search-input-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: clampCal(8, 16);
+}
+/* ======================= Library Page Css End ======================== */

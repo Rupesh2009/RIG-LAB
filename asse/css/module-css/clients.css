@@ -1,0 +1,108 @@
+
+/** clients-section **/
+
+
+.clients-section{
+  position: relative;
+}
+
+.clients-section .clients-logo{
+  position: relative;
+  display: block;
+}
+
+.clients-section .clients-logo img{
+  position: relative;
+  display: block;
+  max-width: 100%;
+  max-width: auto;
+  margin: 0 auto;
+  transition: all 500ms ease;
+}
+
+.clients-section .clients-logo img:hover{
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/** rtl-css **/
+
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .clients-section{
+    padding: 30px 0px 70px 0px;
+  }
+
+  .clients-section.home-3{
+    padding: 70px 0px;
+  }
+
+  .clients-section.home-6{
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  
+}
+
+@media only screen and (max-width: 499px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

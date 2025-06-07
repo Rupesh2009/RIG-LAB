@@ -1,0 +1,60 @@
+/* ======================== Auth Css Start ============================= */
+.auth {
+    min-height: 100vh;
+    &-left {
+        width: 55%;
+        @include lg-screen {
+            width: 50%;
+        }
+        @include sm-screen {
+            display: none;
+        }
+    }
+    &-right {
+        width: 45%;
+        @include lg-screen {
+            width: 50%;
+        }
+        @include sm-screen {
+            width: 100%;
+        }
+        &__inner {
+            max-width: 400px;
+        }
+        &__logo {
+            margin-bottom: clampCal(32, 80, 768, 1399);
+        }
+
+    }
+}
+
+
+.divider {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #DBDADE;
+        z-index: -1;
+    }
+}
+
+
+.squire-input {
+    max-width: 52px;
+    max-height: 52px;
+    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
+    &-wrapper {
+        gap: 14px;
+        @include sm-screen {
+            gap: 8px;
+        }
+    }
+}
+/* ======================== Auth Css End ============================= */

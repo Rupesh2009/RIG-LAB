@@ -1,0 +1,27 @@
+.scroll-sm {
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: hsl(var(--white));
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #e4e4e4;
+        background: hsl(var(--white));
+        border-radius: 50px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #c1c1c1 !important
+    }
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background: #e4e4e4;
+        }
+    }
+
+    &-horizontal {
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+    }
+}

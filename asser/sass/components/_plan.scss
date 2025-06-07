@@ -1,0 +1,24 @@
+/* =========================== Pricing Plan Css Start ======================= */
+.plan-item {
+    padding: 24px 32px;
+    @include lg-screen {
+        padding: 24px 16px;
+    }
+    &:hover {
+        border-color: var(--main-600) !important;
+    }
+    &.active {
+        background-color: var(--main-50) !important;
+        border-color: var(--main-200) !important;
+        .border-gray-100 {
+            border-color: var(--main-300) !important;
+        }
+        &:hover {
+            border-color: var(--main-600) !important;
+        }
+    }
+}
+.plan-badge {
+    clip-path: polygon(6% 0, 100% 0, 100% 50%, 100% 100%, 6% 100%, 0% 50%);
+}
+/* =========================== Pricing Plan Css End ======================= */

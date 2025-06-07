@@ -1,0 +1,124 @@
+//plan-area
+.plan {
+    background-color: #8E66FF;
+    padding: 50px 50px 30px 50px;
+    border-radius: 5px;
+    @media #{$lg} {
+        padding: 50px 15px 30px 15px;
+    }
+    @media #{$md} {
+        padding: 50px 25px 30px 25px;
+    }
+    @media #{$xs} {
+        padding: 50px 15px 30px 15px;
+    }
+   & .pr__header {
+       border-bottom: 2px solid rgba(168, 165, 165, 0.2);
+        & h2 {
+            color: $white;
+            font-size: 46px;
+            margin-bottom: 25px;
+        }
+        & h5 {
+            color: $white;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        & .pr-icon {
+            margin-bottom: 25px;
+        }
+    } 
+    
+    .pr__body {
+         & .old-price {
+             color: rgba(255, 255, 255, 0.15);
+             font-size: 30px;
+             font-weight: 500;
+             text-decoration: line-through;
+         }
+        & h2 {
+            & b {
+                color: $white;
+                font-size: 40px;
+                & sup {
+                    font-size: 14px;
+                    top: -17px;
+                }
+               & .new-price {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+        & .price-list {
+            text-align: left;
+            & li {
+                color: $white;
+                font-size: 16px;
+                margin-bottom: 22px;
+                padding-left: 42px;
+                position: relative;
+                z-index: 1; 
+                &::before {
+                    content: '\f00c';
+                    position: absolute;
+                    font-family: 'Font Awesome 5 pro';
+                    font-size: 18px;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                }
+            }
+        } 
+    } 
+}
+
+.price_btn {
+    background: transparent;
+    border: 2px solid $white;
+    padding: 16px 78px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover, &.active {
+        color: $theme-color;
+        background-color: $white;
+    }
+    &.active {
+        &:hover {
+            color: $white;
+            background-color: transparent;
+        }
+    }
+    
+}
+.plan-2 {
+    background-color: $theme-color;
+}
+.plan-2a {
+    background-color: $deep-pink;
+}
+
+
+.plan-tab {
+    .nav-tabs {
+        justify-content: center;
+        border: 0;
+        & .nav-link {
+            margin-bottom: -1px;
+            background: 0 0;
+            border: 1px solid transparent;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            background-color: rgba(255, 114, 58, 0.1);
+            border: 0;
+            color: $theme-color;
+            text-transform: uppercase;
+            padding: 19px 39px;
+            margin: 10px 10px;
+            &.active {
+                color: $white;
+                background-color: $theme-color;
+            }
+        }
+    }
+}

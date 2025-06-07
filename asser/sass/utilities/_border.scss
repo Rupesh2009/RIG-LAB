@@ -1,0 +1,49 @@
+
+// border
+.border-transparent {
+  border-color: transparent !important;
+}
+
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .border-#{$color}-#{$shade} {
+        border-color: var(--#{$color}-#{$shade}) !important;
+      }
+    }
+}
+
+// hover border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .hover-border-#{$color}-#{$shade} {
+        &:hover {
+            border-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+  }
+
+// focus border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .focus-border-#{$color}-#{$shade} {
+        &:focus {
+            border-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+  }
+
+.focus-border-main-600:focus-within {
+  border-color: var(--main-600) !important;
+}
+
+
+.border {
+  &-dashed {
+    border-style: dashed !important;
+  }
+  &-dotted {
+    border-style: dotted !important;
+  }
+}

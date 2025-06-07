@@ -1,0 +1,146 @@
+/* ==================== Data Tables Css Start ========================== */
+tr {
+    vertical-align: middle;
+}
+
+table.dataTable {
+    min-width: 1199px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: transparent !important;
+    --bs-table-bg-type: transparent !important;
+}
+
+.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
+    border-bottom: 1px solid var(--gray-100) !important;
+}
+
+.dt-container.dt-empty-footer tbody>tr:last-child>* {
+    border-bottom: 1px solid var(--gray-100) !important;
+}
+
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+    text-align: start;
+}
+
+.dataTable>tbody>tr td:first-child, .dataTable>thead>tr th:first-child {
+    padding-inline-start: 20px;
+}
+.dataTable>tbody>tr td:last-child, .dataTable>thead>tr th:last-child {
+    padding-inline-end: 20px;
+}
+table.dataTable thead>tr>th.dt-orderable-asc:hover, table.dataTable thead>tr>th.dt-orderable-desc:hover, table.dataTable thead>tr>td.dt-orderable-asc:hover, table.dataTable thead>tr>td.dt-orderable-desc:hover {
+    outline: 0;
+    outline-offset: -2px;
+}
+.dt-layout-cell {
+    padding-top: 0 !important;
+}
+
+.dt-paging-button {
+    width: 36px;
+    height: 36px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent !important;
+    border-radius: 8px !important;
+    background: transparent !important;
+    color: var(--gray-200) !important;
+    font-weight: 500;
+    &:hover, &.current {
+        border: 1px solid var(--main-200) !important;
+        background: var(--main-50) !important;
+    }
+}
+div.dt-container .dt-paging .dt-paging-button {
+    color: var(--gray-200) !important;
+}
+div.dt-container .dt-paging .dt-paging-button:hover {
+    color: var(--gray-300) !important;
+}
+div.dt-container .dt-paging .dt-paging-button.disabled {
+    cursor: no-drop !important;
+}
+
+.dt-paging.paging_full_numbers {
+    display: flex;
+    justify-content: end;
+}
+.dt-layout-cell {
+    &.dt-end, &.dt-start {
+        padding: 20px !important;
+    }
+}
+
+table.dataTable thead>tr>th.dt-ordering-desc span.dt-column-order:after {
+    opacity: 1;
+}
+
+table.dataTable thead>tr>th.dt-orderable-desc span.dt-column-order:after, table.dataTable thead>tr>th.dt-ordering-desc span.dt-column-order:after, table.dataTable thead>tr>td.dt-orderable-desc span.dt-column-order:after, table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order:after {
+    content: "\E03E" !important;
+    font-family: 'Phosphor' !important;
+    color: var(--gray-400) !important;
+    font-size: 16px !important;
+    opacity: .4;
+}
+
+table.dataTable thead>tr>th.dt-orderable-asc span.dt-column-order:before, table.dataTable thead>tr>td.dt-orderable-asc span.dt-column-order:before, table.dataTable thead>tr>td.dt-ordering-asc span.dt-column-order:before {
+    content: "\E08E" !important;
+    font-family: 'Phosphor' !important;
+    color: var(--gray-400) !important;
+    font-size: 16px !important;
+    opacity: .4;
+    left: -10px !important;
+} 
+table.dataTable thead>tr>th.dt-ordering-desc span.dt-column-order:after, table.dataTable thead>tr>td.dt-ordering-asc span.dt-column-order:before, table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order:after {
+    opacity: 1;
+}
+.dt-orderable-none .dt-column-order {
+    display: none;
+}
+
+.dt-orderable-asc.dt-orderable-desc.dt-ordering-asc .dt-column-order::before {
+    opacity: 1 !important;
+}
+
+
+.table.table-lg.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td {
+    padding: 15px 10px;
+}
+.table-lg.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
+    padding: 13px;
+}
+.dt-container .dt-paging .dt-paging-button {
+    height: 44px;
+    width: 44px;
+}
+
+
+.fixed-width {
+    width: 40px !important;
+    max-width: 40px !important;
+    min-width: 40px !important;
+}
+.dt-paging-button {
+    font-size: 20px;
+}
+.fc-header-title {
+    margin-top: -14px;
+}
+.fc-header-title h2 {
+    margin-bottom: 0;
+}
+
+.dataTable>thead>tr>th {
+    padding: 20px 10px;
+}
+
+.dt-container div.dt-layout-cell {
+    padding: 0 !important;
+}
+.dt-container.dt-empty-footer tbody > tr:last-child > * {
+    border-bottom: 0 !important;
+}
+/* ==================== Data Tables Css End ========================== */

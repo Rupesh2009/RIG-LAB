@@ -1,0 +1,153 @@
+
+/** error-section **/
+
+.error-section{
+  position: relative;
+  padding: 160px 0px 150px 0px;
+}
+
+.error-section .inner-box{
+  position: relative;
+  display: block;
+}
+
+.error-section .inner-box .error-image{
+  position: relative;
+  display: block;
+  margin-bottom: 45px;
+}
+
+.error-section .inner-box h2{
+  position: relative;
+  display: block;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.error-section .inner-box .btn-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-section .inner-box .btn-box .error-btn{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--title-font);
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 15px 38px;
+  margin-right: 20px;
+}
+
+.error-section .inner-box .btn-box .error-btn i{
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  transform: rotate(180deg);
+  margin-right: 10px;
+}
+
+.error-section .inner-box .btn-box .error-btn:hover{
+  color: #fff;
+}
+
+
+/** rtl-css **/
+
+.rtl .error-section .inner-box .btn-box .error-btn{
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.rtl .error-section .inner-box .btn-box .error-btn i{
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .error-section{
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+  .error-section .inner-box .error-image img{
+    width: 100%;
+  }
+
+  .error-section .inner-box h2{
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .error-section .inner-box .btn-box{
+    display: block;
+    text-align: center;
+  }
+
+  .error-section .inner-box .btn-box .error-btn{
+    margin: 0px 0px 20px 0px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

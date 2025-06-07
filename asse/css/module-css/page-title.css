@@ -1,0 +1,153 @@
+
+/** page-title **/
+
+.page-title{
+  position: relative;
+  background: rgba(250, 250, 251, 1);
+  padding: 230px 0px 120px 0px;
+}
+
+.page-title .pattern-layer{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 1324px;
+  height: 1477px;
+  background-repeat: no-repeat;
+}
+
+.page-title.about-page{
+  background: #fff;
+}
+
+.page-title h1{
+  position: relative;
+  display: block;
+  font-size: 60px;
+  line-height: 64px;
+  margin-bottom: 15px;
+}
+
+.page-title .bread-crumb li{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+  padding-right: 15px;
+  margin-right: 5px;
+}
+
+.page-title .bread-crumb li:last-child{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.page-title .bread-crumb li a{
+  display: inline-block;
+  color: #000;
+}
+
+.page-title .bread-crumb li a:hover{
+
+}
+
+.page-title .bread-crumb li:before{
+  position: absolute;
+  content: '';
+  background: #000;
+  width: 6px;
+  height: 1.5px;
+  top: 16px;
+  right: 0px;
+}
+
+.page-title .bread-crumb li:last-child:before{
+  display: none;
+}
+
+
+/** rtl-css **/
+
+.rtl .page-title .bread-crumb li{
+  padding-right: 0px;
+  padding-left: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.rtl .page-title .bread-crumb li:before{
+  right: inherit;
+  left: 0px;
+}
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .page-title h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .page-title{
+    padding: 120px 0px 70px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

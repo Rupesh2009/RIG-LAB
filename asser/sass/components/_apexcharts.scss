@@ -1,0 +1,107 @@
+/* ================================ Apex Charts Css Start =================================== */
+/* Home One Widget Chart Css Start*/
+.remove-tooltip-title {
+    .apexcharts-tooltip-title {
+        display: none;
+    }
+}
+
+.rounded-tooltip-value {
+    .apexcharts-tooltip.apexcharts-theme-light {
+        background: hsl(var(--white ));
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .apexcharts-tooltip-text-y-label {
+        display: none;
+    }
+
+    .apexcharts-tooltip-marker {
+        display: none;
+    }
+    .apexcharts-tooltip-text-y-value {
+        margin-left: 0;
+    }
+
+    .apexcharts-tooltip-text {
+        display: flex;
+    }
+}
+/* Home One Widget Chart Css End*/
+
+
+/* Tooltip Css */
+.tooltip-style {
+    .apexcharts-tooltip {
+      padding: rem(12px) rem(8px);
+      background-color: var();
+      border: 0;
+      background-color: var(--white);
+      @extend .box-shadow-md; 
+      &-title {
+        padding: 0 !important;
+        background-color: transparent !important;
+        font-size: rem(14px) !important;
+        color: var(--text-primary-light) !important;
+        font-weight: 600 !important;
+        border: none !important;
+      }
+      &-series-group {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 !important;
+        .apexcharts-tooltip-y-group {
+          padding: 0 !important;
+        }
+        .apexcharts-tooltip-z-group {
+          display: none !important;
+        }
+      }
+    }
+}
+  
+.apexcharts-text {
+  fill: var(--gray-300) !important;
+  font-family: var(--body-font) !important;
+}
+
+#radialMultipleBar {
+  .apexcharts-text {
+    fill: var(--gray-600) !important;
+    font-size: 16px;
+    &.apexcharts-datalabel-label {
+      display: none;
+    }
+  }
+  .apexcharts-datalabels-group {
+    transform: translateY(-24px);
+  }
+}
+
+.apexcharts-tooltip-z-group {
+  display: none;
+}
+.apexcharts-pie-series path {
+  stroke: #fff !important;
+}
+
+#activityDonutChart {
+  .apexcharts-text {
+    fill: hsl(var(--white)) !important;
+  }
+}
+
+.apexcharts-inner {
+  position: relative;
+  padding-left: 35px !important;
+  margin-left: 20px !important;
+}
+.y-value-left .apexcharts-yaxis {
+  transform: translateX(10px);
+}
+/* ================================ Apex Charts Css End =================================== */

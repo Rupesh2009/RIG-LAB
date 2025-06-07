@@ -1,0 +1,21 @@
+
+/* Hide Scroll bar Css For Custom Modal */
+.scroll-hide {
+    position: absolute;
+    overflow-y: hidden;
+    padding-inline-end: 17px;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    @include md-screen {
+        padding-inline-end: 0;
+    }
+    &-sm {
+        position: absolute;
+        overflow-y: hidden;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        width: calc(100% - 0px);
+    }
+}
+/* Hide Scroll bar Css For Custom Modal End */

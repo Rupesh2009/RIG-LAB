@@ -1,0 +1,167 @@
+//faq-area
+.faq-blur-bg {
+    width: 707px;
+    height: 758px;
+    background: #f14d5d;
+    opacity: 0.05;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    position: absolute;
+    left: 17.70%;
+    top: 130px;
+    z-index: -1;
+    @media #{$lg} {
+        display: none;
+    }
+    @media #{$md} {
+        display: none;
+    }
+    @media #{$xs} {
+        display: none;
+    }
+}
+.faq-img-wrapper {
+    animation: float-bob-y infinite 5s linear;
+    .faq_01 {
+       position: relative;
+       z-index:2;
+       @media #{$lg} {
+           width: 100%;
+       }
+       @media #{$md} {
+           width: 100%;
+       }
+       @media #{$xs} {
+           width: 100%;
+       }
+    }
+    .faq_02 {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        @media #{$lg} {
+            width: 100%;
+            left: 0;
+        }
+
+        @media #{$md} {
+            width: 100%;
+             left: 0;
+        }
+
+        @media #{$xs} {
+            width: 100%;
+             left: 0;
+        }
+    }
+}
+
+.faq-que-list {
+    position: relative;
+    z-index: 1;
+    @media #{$laptop} {
+        padding-left: 0;
+    }
+    @media #{$lg} {
+        padding-left: 0;
+    }
+    @media #{$md} {
+        padding-left: 0;
+    }
+    @media #{$xs} {
+        padding-left: 0;
+    }
+}
+.accordion {
+   & .accordion-item {
+        background-color: #fff;
+        border: 0;
+    }
+   & .accordion-button {
+        font-size: 16px;
+        color: #303030;
+        text-align: left;
+        background-color: #fff;
+        border: 0;
+        border-radius: 0;
+        transition:unset;
+        font-weight: 500;
+        border-radius: 5px;
+        box-shadow: 5px 15px 60px rgba(27, 33, 47, 0.05);
+        padding: 20px 40px;
+        position: relative;
+
+        &:focus {
+            z-index: 3;
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: none;
+        }
+        &::after {
+            flex-shrink: 0;
+            width: unset;
+            height: unset;
+            margin-left: auto;
+            content: "\f067";
+            position: absolute;
+            font-family: "Font Awesome 5 pro";
+            font-size: 13px;
+            background-image:unset;
+            background-repeat: no-repeat;
+            background-size: unset;
+            transition: transform 0.2s ease-in-out;
+            left: 25px;
+            top: 40%;
+            z-index: 1;
+        }
+        &:not(.collapsed)::after {
+             content: "\f068";
+            background-image: unset;
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+
+//accordion-two
+.accordion-two {
+   & .collapsed {
+        border: 1px solid rgba(255, 114, 58, 0.2) !important;
+        border-radius: 5px;
+        background-color: transparent !important;
+    }
+    & .accordion-button {
+         color: $heding;
+         font-size: 22px !important;
+         font-weight: 600;
+         background-color: rgba(255, 114, 58, 0.05);
+         border-color: rgba(255, 114, 58, 0.05);
+         border-radius: 5px;
+         padding-left: 40px;
+         box-shadow: none;
+        &::after {
+            color: $theme-color;
+            content: "\f078";
+            left: auto;
+            right: 25px;
+        }
+         &:not(.collapsed)::after {
+             content: "\f078";
+         }
+    }
+   & .accordion-body {
+       background-color: rgba(255, 114, 58, 0.05);
+       padding-top: 0;
+       & p {
+           font-size: 18px;
+           padding: 0 65px 0 20px;
+       }
+   }
+} 
+
+
+.faq_btn {
+    border-radius: 5px;
+}

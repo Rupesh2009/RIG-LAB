@@ -1,0 +1,35 @@
+//page-title-area
+section.page-title-area {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	background-repeat: no-repeat;
+	min-height: 200px;
+	position: relative;
+	z-index: 1;
+}
+.page-title-wrapper {
+	position: relative;
+	z-index: 2;
+	& .page-title {
+		color: $heding;
+		font-size: 44px;
+		z-index: 1;
+		@media #{$xs} {
+			font-size: 35px;
+		}
+
+	}
+}
+
+ul.breadcrumb {
+	& li {
+		& a {
+			color: $heding;
+			font-size: 18px;
+			line-height: 1;
+			display: inline-block;
+		}
+	}
+} 
+

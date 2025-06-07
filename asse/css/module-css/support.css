@@ -1,0 +1,120 @@
+
+/** support-section **/
+
+.support-section{
+  position: relative;
+}
+
+.image_block_eight .image-box{
+  position: relative;
+  display: block;
+}
+
+.image_block_eight .image-box .image{
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.10);
+}
+
+.image_block_eight .image-box .image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image_block_eight .image-box .image-2{
+  position: absolute;
+  top: 170px;
+  right: 0px;
+}
+
+.image_block_eight .image-box .image-3{
+  position: absolute;
+  right: 0px;
+  bottom: 115px;
+}
+
+.support-section .content_block_one .content-box .inner-box .single-item{
+  padding: 0px !important;
+}
+
+
+/** rtl-css **/
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .support-section{
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  .image_block_eight .image-box{
+    padding: 0px;
+  }
+
+  .image_block_eight .image-box .image-2{
+    position: relative;
+    top: 0px;
+    margin: 30px 0px;
+  }
+
+  .image_block_eight .image-box .image-3{
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 499px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

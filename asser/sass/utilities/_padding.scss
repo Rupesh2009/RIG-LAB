@@ -1,0 +1,66 @@
+/* ================================= Padding Css Start =========================== */
+@each $property, $value in $spaces {
+  .p-#{$property} {
+    padding: var(--size-#{$property}) !important;
+  }
+}
+
+@each $property, $value in $spaces {
+  .px-#{$property} {
+    padding-inline: var(--size-#{$property}) !important;
+  }
+}
+
+@each $property, $value in $spaces {
+  .py-#{$property} {
+    padding-block: var(--size-#{$property}) !important;
+  }
+}
+
+@each $property, $value in $spaces {
+  .ps-#{$property} {
+    padding-inline-start: var(--size-#{$property}) !important;
+  }
+}
+
+@each $property, $value in $spaces {
+  .pe-#{$property} {
+    padding-inline-end: var(--size-#{$property}) !important;
+  }
+}
+
+@each $property, $value in $spaces {
+  .pt-#{$property} {
+    padding-block-start: var(--size-#{$property}) !important;
+  }
+}
+
+@each $property, $value in $spaces {
+  .pb-#{$property} {
+    padding-block-end: var(--size-#{$property}) !important;
+  }
+}
+
+.p-lg-20 {
+  @media (min-width: 992px) {
+      padding: 20px !important;
+  }
+}
+
+
+.pt-0 {
+  padding-block-start: 0!important;
+}
+
+.pb-0 {
+  padding-block-end: 0!important;
+}
+
+.ps-0 {
+  padding-inline-start: 0!important;
+}
+
+.pe-0 {
+  padding-inline-end: 0!important;
+}
+/* ================================= Padding Css End =========================== */

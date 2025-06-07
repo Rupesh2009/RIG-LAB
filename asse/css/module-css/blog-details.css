@@ -1,0 +1,438 @@
+
+
+.blog-details-content{
+  position: relative;
+}
+
+.blog-details-content .news-block-two .inner-box .lower-content p{
+  margin-bottom: 26px;
+}
+
+.blog-details-content .news-block-two .inner-box .lower-content p:last-child{
+  margin-bottom: 0px;
+}
+
+.blog-details-content .news-block-two .inner-box{
+  box-shadow: none;
+}
+
+.blog-details-content .news-block-two .inner-box .lower-content{
+  padding: 0px;
+  padding-top: 35px;
+}
+
+.blog-details-content .list-item li{
+  position: relative;
+  display: block;
+  margin-bottom: 9px;
+  padding-left: 20px;
+}
+
+.blog-details-content .list-item li:last-child{
+  margin-bottom: 0px;
+}
+
+.blog-details-content .list-item li:before{
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: 0px;
+  top: 10px;
+  background-image: -webkit-linear-gradient(90deg, rgba(253, 34, 92, 1), rgba(254, 122, 64, 1) 50%);
+}
+
+.blog-details-content blockquote{
+  position: relative;
+  display: block;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  margin: 0px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  margin-bottom: 60px;
+}
+
+.blog-details-content blockquote h4{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101A30;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.blog-details-content blockquote .author-inner{
+  position: relative;
+  display: block;
+  padding: 13px 0px 15px 85px;
+}
+
+.blog-details-content blockquote .author-inner .thumb-box{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.blog-details-content blockquote .author-inner .thumb-box img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.blog-details-content blockquote .author-inner h3{
+  position: relative;
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.blog-details-content blockquote .author-inner .designation{
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.blog-details-content blockquote .light-icon{
+  position: absolute;
+  right: 45px;
+  bottom: 0px;
+}
+
+.blog-details-content .content-two h2{
+  position: relative;
+  display: block;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 25px;
+}
+
+.blog-details-content .content-two p{
+  margin-bottom: 26px;
+}
+
+.blog-details-content .content-two p:last-child{
+  margin-bottom: 0px;
+}
+
+.blog-details-content .content-two .image-box{
+  position: relative;
+  display: block;
+}
+
+.blog-details-content .content-two .image-box img{
+  width: 100%;
+}
+
+.blog-details-content .content-three h2{
+  position: relative;
+  display: block;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+
+.blog-details-content .post-share-option{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-details-content .post-share-option .post-category{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.blog-details-content .post-share-option ul li span{
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  color: var(--title-color);
+  padding-right: 4px;
+}
+
+.blog-details-content .post-share-option .post-category li{
+  margin-right: 10px;
+}
+
+.blog-details-content .post-share-option .post-category li:last-child{
+  margin: 0px !important;
+}
+
+.blog-details-content .post-share-option .post-category li a{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 26px;
+  color: #6A6A6A;
+  background: #F7F7F7;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.blog-details-content .post-share-option .post-category li a:hover{
+  color: #fff;
+}
+
+.blog-details-content .post-share-option .post-share{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.blog-details-content .post-share-option .post-share li{
+  margin-right: 20px;
+}
+
+.blog-details-content .post-share-option .post-share li:last-child{
+  margin: 0px !important;
+}
+
+.blog-details-content .post-share-option .post-share li a{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #6A6A6A;
+}
+
+.blog-details-content .post-share-option .post-share li a:hover{
+
+}
+
+.blog-details-content .author-box{
+  position: relative;
+  display: block;
+  background: #F7F7F7;
+  padding: 40px 70px 42px 190px;
+}
+
+.blog-details-content .author-box .author-thumb{
+  position: absolute;
+  display: inline-block;
+  left: 40px;
+  top: 40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.blog-details-content .author-box .author-thumb img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.blog-details-content .author-box h3{
+  position: relative;
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+.blog-details-content .author-box .designation{
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+
+.blog-details-content .comment-form-area form .form-group{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.blog-details-content .comment-form-area form .form-group:last-child{
+  margin-bottom: 0px;
+}
+
+.blog-details-content .comment-form-area form .form-group input[type='text'],
+.blog-details-content .comment-form-area form .form-group input[type='email'],
+.blog-details-content .comment-form-area form .form-group textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #6E6E6E;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
+
+.blog-details-content .comment-form-area form .form-group textarea{
+  height: 170px;
+  resize: none;
+  padding-top: 15px;
+}
+
+.blog-details-content .comment-form-area form .form-group input:focus,
+.blog-details-content .comment-form-area form .form-group textarea:focus{
+
+}
+
+.blog-details-content .comment-form-area h3{
+  position: relative;
+  display: block;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+
+/** rtl-css **/
+
+.rtl .blog-details-content .author-box{
+  padding-left: 70px;
+  padding-right: 190px;
+}
+
+.rtl .blog-details-content .author-box .author-thumb{
+  left: inherit;
+  right: 40px;
+}
+
+.rtl .blog-details-content .post-share-option .post-category li{
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.rtl .blog-details-content .post-share-option .post-share li{
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.rtl .blog-details-content blockquote .author-inner{
+  padding-left: 0px;
+  padding-right: 85px;
+}
+
+.rtl .blog-details-content blockquote .author-inner .thumb-box{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .blog-details-content .list-item li{
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+.rtl .blog-details-content .list-item li:before{
+  left: inherit;
+  right: 0px;
+}
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .blog-details-content .content-two .image-box{
+    margin-bottom: 30px;
+  }
+
+  .blog-details-content .post-share-option{
+    display: block;
+  }
+
+  .blog-details-content .post-share-option .post-category{
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+  .blog-details-content .author-box{
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  .blog-details-content .author-box .author-thumb{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .blog-details-content blockquote{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .blog-details-content .post-share-option .post-category{
+    display: block;
+  }
+
+  .blog-details-content .post-share-option .post-category li{
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .rtl .blog-details-content .author-box{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

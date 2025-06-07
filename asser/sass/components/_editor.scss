@@ -1,0 +1,42 @@
+/* ===================== Editor Css Start ====================== */
+.editor {
+    .ql-container.ql-snow {
+        border: 1px solid var(--gray-200) !important;
+        border-radius: 8px;
+    }
+    .ql-toolbar.ql-snow {
+        border: 0;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    .ql-picker-label {
+        padding-left: 0 !important;
+    }
+    .ql-snow .ql-stroke {
+        stroke: var(--gray-600);
+    }
+
+    &.style-two {
+        .ql-container.ql-snow {
+            border-color: var(--main-100) !important;
+            border-top: 0 !important;
+            border-radius: 0px 0 16px 16px;
+        }
+        .ql-editor {
+            min-height: 110px;
+        }
+        .ql-toolbar.ql-snow {
+            background-color: var(--main-50);
+            padding: 8px 16px;
+            margin-bottom: 0;
+            border-radius: 16px 16px 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            &:nth-child(2) {
+                margin-left: auto;
+            }
+        }
+    }
+}
+/* ===================== Editor Css End ====================== */

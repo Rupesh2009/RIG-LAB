@@ -1,0 +1,146 @@
+
+/** funfact-section **/
+
+.funfact-section{
+  position: relative;
+}
+
+.funfact-section .inner-container{
+  position: relative;
+  display: block;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 45px 30px;
+}
+
+.funfact-block-one .inner-box{
+  position: relative;
+  display: block;
+}
+
+.funfact-block-one .inner-box:before{
+  position: absolute;
+  content: '';
+  background: rgba(255, 255, 255, 0.07);
+  width: 1px;
+  height: 40px;
+  top: 25px;
+  right: -15px;
+}
+
+.funfact-block:last-child .funfact-block-one .inner-box:before{
+  display: none;
+}
+
+.funfact-block-one .inner-box .count-outer{
+  position: relative;
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  font-family: var(--title-font);
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.funfact-block-one .inner-box p{
+  color: #A9A7B0;
+}
+
+.funfact-block:first-child .funfact-block-one .inner-box .count-outer{
+  color: #B47AFF;
+}
+
+.funfact-block:nth-child(2) .funfact-block-one .inner-box .count-outer{
+  color: #37BB7D;
+}
+
+.funfact-block:nth-child(3) .funfact-block-one .inner-box .count-outer{
+  color: #FA8747;
+}
+
+.funfact-block:last-child .funfact-block-one .inner-box .count-outer{
+  color: #02CECE;
+}
+
+
+/** rtl-css **/
+
+.rtl .funfact-block-one .inner-box:before{
+  right: inherit;
+  left: -15px;
+}
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+  .funfact-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .funfact-block-one .inner-box:before{
+    display: none;
+  }
+
+  .funfact-section .inner-container{
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+
+}
+
+@media only screen and (max-width: 599px){
+  
+}
+
+@media only screen and (max-width: 499px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

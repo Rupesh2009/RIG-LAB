@@ -1,0 +1,23 @@
+/* ====================== Setting My Details Start =========================== */
+.setting-profile {
+    position: relative;
+    margin-top: -24px;
+    &__infos {
+        @include sm-screen {
+           span {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+.comments-box__content {
+    @include xsm-screen {
+        flex-wrap: wrap;
+    }
+}
+
+.toggle-search-box {
+    display: none;
+}
+/* ====================== Setting My Details End =========================== */

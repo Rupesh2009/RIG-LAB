@@ -1,0 +1,26 @@
+/* Email Css Start */
+.item-active.activePage {
+    > a {
+        background-color: var(--main-50)!important;
+        color: var(--main-600) !important;
+        .icon {
+            color: inherit;
+        }
+    }
+}
+
+.email-links {
+    &.activePage {
+        > a {
+            background-color: var(--main-50) !important;
+        }
+    }
+}
+
+.reload-button {
+    transition: .2s linear;
+    &:active {
+        transform: rotate(90deg);
+    }
+}
+/* Email Css End */

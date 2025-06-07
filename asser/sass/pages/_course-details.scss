@@ -1,0 +1,49 @@
+/* ==================== Course Details Css Start ========================== */
+.course-item {
+  &__button {
+    &:hover,
+    &.active {
+      span {
+        color: var(--main-600) !important;
+      }
+    }
+    &.active {
+      .course-item__arrow i::before {
+        content: "\E136" !important;
+      }
+    }
+  }
+  &-dropdown {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+
+/* Player Css Start */
+.player {
+    width: 100%;
+  }
+  .plyr__poster {
+    background-size: cover;
+  }
+  
+  .plyr__controls__item {
+      &.plyr__control {
+          &[data-plyr="pip"] {
+            @include msm-screen {
+                display: none;
+            }
+          }
+          &[data-plyr="fullscreen"] {
+            @include xsm-screen {
+                display: none;
+            }
+            }
+      }
+  }
+/* Player Css End */
+
+/* ==================== Course Details Css End ========================== */

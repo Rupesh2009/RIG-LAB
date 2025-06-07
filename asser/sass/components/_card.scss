@@ -1,0 +1,24 @@
+/* ================= Common Card Css Start ========================= */
+.card {
+    border: 0;
+    border-radius: 16px;
+    .card-header, .card-footer {
+        padding: 20px;
+        background-color: transparent;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .card-header {
+        .title {
+            color: hsl(var(--white));
+            margin-block-end: 0;
+        }
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .card-footer {
+        border-top: 1px solid var(--border-color);
+        border-bottom: 0;
+    }
+}
+/* ================= Common Card Css End ========================= */

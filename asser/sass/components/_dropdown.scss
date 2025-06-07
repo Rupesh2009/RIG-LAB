@@ -1,0 +1,17 @@
+/* =========================== Dropdown Css Start ======================== */
+.dropdown-menu {
+    &--lg {
+        width: 330px;
+        @include msm-screen {
+            width: 290px;
+        }
+    }
+    &--md {
+        width: 196px;
+    }
+}
+
+button.show {
+    background-color: var(--main-200) !important;
+}
+/* =========================== Dropdown Css End ======================== */

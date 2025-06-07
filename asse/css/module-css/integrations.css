@@ -1,0 +1,122 @@
+
+/** integrations-section **/
+
+.integrations-section{
+  position: relative;
+}
+
+.integrations-section .logo-list li{
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-right: 28px;
+  margin-bottom: 30px;
+}
+
+.integrations-section .logo-list li:last-child{
+  margin: 0px !important;
+}
+
+.integrations-section .logo-list li a{
+  position: relative;
+  display: inline-block;
+  width: 118px;
+  height: 118px;
+  line-height: 118px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.integrations-section .outer-container{
+  padding: 0px 22px;
+}
+
+.integrations-section .outer-container .logo-list li a{
+  border-radius: 50%;
+}
+
+.integrations-section .logo-list{
+  position: relative;
+  width: max-content;
+  -moz-animation: scroll-left 90s linear infinite;
+  -webkit-animation: scroll-left 90s linear infinite;
+  animation: scroll-left 90s linear infinite;
+}
+
+
+
+/** rtl-css **/
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 767px){
+  .integrations-section{
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  
+}
+
+@media only screen and (max-width: 499px){
+  .integrations-section .logo-list li{
+    float: none;
+    text-align: center;
+    display: block;
+    margin-right: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

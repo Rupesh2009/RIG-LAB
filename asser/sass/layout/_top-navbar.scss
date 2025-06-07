@@ -1,0 +1,120 @@
+/* =========================== Top Navbar Css Start =============================== */
+.top-navbar {
+    background-color: hsl(var(--white));
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    border-bottom: 1px solid var(--gray-100);
+    @include md-screen {
+        padding-block-start: 8px;
+        padding-block-end: 8px;
+    }
+}
+  
+/* Notification Css Start */
+.alarm-notify {
+    width: 8px;
+    height: 8px;
+    background-color: var(--danger-600);
+    inset-block-start: 2px;
+    inset-inline-start: inherit;
+    inset-inline-start: inherit;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    &::before, &::after {
+        position: absolute;
+        content: '';
+        background-color: inherit;
+        opacity: 0.8;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        inset-block-end: 0;
+        border-radius: 50px;
+        transform: scale(1);
+        animation-name: transformScale;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        z-index: -1;
+    }
+    &::after {
+        animation-delay: 0.75s;
+    }
+}
+
+@keyframes transformScale {
+    0%   {
+        transform: scale(1);
+        opacity: 0.9; 
+    }
+    60% {
+        transform: scale(2.5);
+        opacity: 0.2; 
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0.0; 
+    }
+}
+
+
+
+.activation-badge {
+    &::before {
+        position: absolute;
+        content: "";
+        width: inherit;
+        height: inherit;
+        background-color: var(--success-600);
+        inset-inline-end: 2px;
+        inset-block-end: 0;
+        border-style: solid;
+        border-color: hsl(var(--white));
+        border-width: 1px;
+        border-radius: 50%;
+        z-index: 1;
+        pointer-events: none;
+    }
+    &.border-2 {
+        &::before {
+            border-width: 2px;
+        }
+    }
+}
+.inactive .activation-badge::before {
+    background-color: var(--warning-600);
+}
+
+.shaking-animation {
+    animation: shaking 5s infinite;
+}
+
+@keyframes shaking {
+    0% { transform: rotate(0);}
+    3% { transform: rotate(30deg); }
+    6% { transform: rotate(-28deg); }
+    9% { transform: rotate(10deg); }
+    12% { transform: rotate(-10deg); }
+    15% { transform: rotate(0deg); }
+    100% { transform: rotate(0); }
+}
+/* Notification Css End */
+
+.arrow-down-icon {
+    &::before {
+        position: absolute;
+        content: "\E136";
+        font-family: "Phosphor";
+        inset-inline-end: 20px;
+        inset-block-start: 50%;
+        transform: translateY(-50%);
+        color: var(--gray-500);
+        font-size: 15px;
+        width: 7px;
+        font-weight: 900;
+    }
+}
+/* =========================== Top Navbar Css End =============================== */

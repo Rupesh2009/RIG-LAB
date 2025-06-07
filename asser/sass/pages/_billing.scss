@@ -1,0 +1,27 @@
+/* ============================== Billing Tab Css Start ======================== */
+.payment-method {
+    &.active {
+        background-color: var(--main-600) !important;
+        color: #fff !important;
+        .title, a {
+            color: #fff !important;
+        }
+        .form-check-input {
+            &::after {
+                background-color: #fff !important;
+            }
+            &:checked {
+                border-color: #fff !important;
+            }
+        }
+        .border-text {
+            color: var(--gray-600) !important;
+        }
+    }
+    &.payment-method-two {
+        &.active {
+            background-color: var(--purple-600) !important;
+        }
+    }
+}
+/* ============================== Billing Tab Css End ======================== */

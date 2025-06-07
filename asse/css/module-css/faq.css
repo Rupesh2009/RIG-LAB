@@ -1,0 +1,425 @@
+
+/** faq-section **/
+
+
+.faq-section{
+  position: relative;
+  z-index: 1;
+}
+
+.accordion{
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion:last-child{
+  margin-bottom: 0px;
+}
+
+.accordion.active-block{
+  background: rgba(255, 255, 255, 0.07);
+  border-color: transparent;
+}
+
+.accordion .acc-btn{
+  position: relative;
+  padding: 21px 80px 21px 30px;
+  cursor: pointer;
+}
+
+.accordion .acc-btn h5{
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.accordion .acc-content{
+  padding: 4px 60px 35px 30px;
+}
+
+.accordion .acc-content p{
+  color: #A9A7B0;
+}
+
+.accordion .acc-btn .icon-box{
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #1E1E1E;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.accordion .acc-btn.active .icon-box{
+  color: #020202;
+}
+
+.accordion .acc-btn .icon-box:before{
+  position: absolute;
+  content: '\e907';
+  font-family: 'icomoon';
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+}
+
+.accordion .acc-btn.active .icon-box:before{
+  content: '\e908';
+  font-size: 2px;
+}
+
+.content_block_two .content-box{
+  position: relative;
+  display: block;
+}
+
+
+/** faq-style-two **/
+
+.faq-style-two{
+  position: relative;
+}
+
+.faq-style-two .inner-box{
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faq-dark-section .accordion{
+  border: none;
+  border-bottom: 1px solid #D7D7D7;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  background: transparent;
+}
+
+.faq-dark-section .accordion .acc-btn h5{
+  color: #0D0D0D;
+}
+
+.faq-dark-section .accordion-box .block .acc-content{
+  padding-left: 0px;
+}
+
+.faq-dark-section .accordion-box .block .acc-content p{
+  color: #6A6A6A;
+}
+
+.faq-dark-section .accordion .acc-btn{
+  padding-left: 0px;
+}
+
+.faq-dark-section .accordion .acc-btn .icon-box{
+  background: #fff;
+  color: #000;
+}
+
+.faq-dark-section .pattern-layer{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1424px;
+  height: 1273px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/** faq-style-three **/
+
+.faq-style-three{
+  position: relative;
+}
+
+.image_block_four .image-box{
+  position: relative;
+  display: block;
+  padding-bottom: 76px;
+  padding-right: 44px;
+}
+
+.image_block_four .image-box .image-1{
+  position: relative;
+  display: block;
+  border-radius: 10px;
+}
+
+.image_block_four .image-box .image-1 img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image_block_four .image-box .image-2{
+  position: absolute;
+  right: -30px;
+  bottom: 0px;
+  border-radius: 8px;
+  box-shadow: 0px 28.15909194946289px 52.29545593261719px 0px rgba(0, 0, 0, 0.05);
+}
+
+.image_block_four .image-box .image-2 img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image_block_four .image-box .flag-list{
+  position: absolute;
+  left: 0px;
+  top: 56px;
+}
+
+.image_block_four .image-box .flag-list li{
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.image_block_four .image-box .flag-list li:last-child{
+  margin-bottom: 0px;
+}
+
+.image_block_four .image-box .flag-list li img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.content_block_five .content-box{
+  position: relative;
+  display: block;
+}
+
+.content_block_five .content-box .accordion{
+  background: #FAFAFB;
+  border-radius: 5px;
+}
+
+.content_block_five .content-box .accordion .acc-btn h5{
+  color: #111111;
+}
+
+.content_block_five .content-box .accordion .acc-content p{
+  color: #6A6A6A;
+}
+
+.content_block_five .content-box .accordion .acc-btn .icon-box{
+  background: transparent;
+  border: 1px solid #111111;
+  color: #111111;
+}
+
+.content_block_five .content-box .accordion .acc-btn.active .icon-box{
+  color: #fff;
+}
+
+.faq-section.home-6.faq-dark-section .accordion{
+  border: 1px solid #D7D7D7;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.faq-section.home-6.faq-dark-section .accordion:last-child{
+  margin-bottom: 0px;
+}
+
+.faq-section.home-6.faq-dark-section .accordion .acc-btn{
+  padding-left: 30px;
+}
+
+.faq-section.home-6.faq-dark-section .accordion-box .block .acc-content{
+  padding-left: 30px;
+}
+
+.faq-section.home-6.faq-dark-section .accordion .acc-btn .icon-box{
+  border: 1px solid #D7D7D7;
+}
+
+.faq-section.home-6.faq-dark-section .accordion .acc-btn.active .icon-box{
+  color: #fff;
+}
+
+.faq-section.home-6.faq-dark-section .video-inner{
+  border-radius: 10px;
+}
+
+.faq-section.home-6.faq-dark-section .video-inner .video-btn a{
+  
+}
+
+.faq-style-two.home-7.faq-dark-section .accordion{
+  border: 1px solid #D7D7D7;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.faq-style-two.home-7.faq-dark-section .accordion:last-child{
+  margin-bottom: 0px;
+}
+
+.faq-style-two.home-7.faq-dark-section .accordion .acc-btn{
+  padding-left: 30px;
+}
+
+.faq-style-two.home-7.faq-dark-section .accordion-box .block .acc-content{
+  padding-left: 30px;
+}
+
+.faq-style-two.home-7.faq-dark-section .accordion .acc-btn .icon-box{
+  border: 1px solid #111111;
+}
+
+.faq-section.pricing-page-two .video-inner{
+  border-radius: 10px;
+}
+
+.faq-section.pricing-page-two .video-inner .video-btn a{
+  
+}
+
+.faq-style-two.home-2 .accordion .acc-btn .icon-box{
+  right: 0px;
+}
+
+
+
+
+/** rtl-css **/
+
+.rtl .content_block_two .content-box{
+  margin-right: 0px;
+  margin-left: 80px;
+}
+
+.rtl .content_block_five .content-box{
+  margin-right: 80px;
+  margin-left: 0px;
+}
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+  .content_block_two .content-box{
+    margin: 0px 0px 30px 0px !important;
+  }
+
+  .image_block_four .image-box{
+    margin-bottom: 30px;
+  }
+
+  .image_block_four .image-box .image-2{
+    right: 0px;
+  }
+
+  .content_block_five .content-box{
+    margin-left: 0px;
+  }
+
+  .rtl .content_block_five .content-box{
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .faq-section{
+    padding-bottom: 70px;
+  }
+
+  .faq-style-two{
+    padding: 40px 0px 70px 0px;
+  }
+
+  .faq-style-three{
+    padding-bottom: 70px;
+  }
+
+  .faq-style-two.home-7.faq-dark-section{
+    padding-top: 0px;
+  }
+
+  .faq-section.pricing-page-two{
+    padding-top: 70px;
+  }
+
+  .faq-section.pricing-page-two .content_block_five .content-box{
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  
+}
+
+@media only screen and (max-width: 499px){
+  .image_block_four .image-box{
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .image_block_four .image-box .image-2{
+    position: relative;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

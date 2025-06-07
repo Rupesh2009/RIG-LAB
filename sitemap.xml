@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://riglab.tech/</loc>
+	<lastmod>2025-06-15T06:20:51+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://riglab.tech/dashboard</loc>
+	<lastmod>2025-06-15T06:20:51+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://riglab.tech/library</loc>
+	<lastmod>2025-06-15T06:20:51+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://riglab.tech/settings</loc>
+	<lastmod>2025-06-15T06:20:51+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://riglab.tech/sign-up</loc>
+	<lastmod>2025-06-15T06:20:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://riglab.tech/sign-in</loc>
+	<lastmod>2025-06-15T06:20:56+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>

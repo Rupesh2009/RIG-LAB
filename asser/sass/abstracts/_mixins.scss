@@ -1,0 +1,64 @@
+/* ============================ Mixins Css Start ============================ */
+/* Media Breakpoint for Each Device Start */
+@mixin xxsm-screen {
+  @media screen and (max-width: 374px) {
+    @content;
+  }
+}
+
+// Xtra Small
+@mixin xsm-screen {
+  @media screen and (max-width: 424px) {
+    @content;
+  }
+}
+// Medium Small Screen (max-width: 575)
+@mixin msm-screen {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+//Small Screen (max-width: 767)
+@mixin sm-screen {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+//Large Screen (max-width: 991)
+@mixin md-screen {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+//Xtra Large Screen (max-width: 1199)
+@mixin lg-screen {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+//Xtra Large Screen i (max-width: 1399)
+@mixin xl-screen {
+  @media screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+//Xtra Large Screen ii (max-width: 1499)
+@mixin xxl-screen {
+  @media screen and (max-width: 1499px) {
+    @content;
+  }
+}
+//Xtra Large Screen ii (max-width: 1599)
+@mixin xxxl-screen {
+  @media screen and (max-width: 1599px) {
+    @content;
+  }
+}
+/* Media Breakpoint for Each Device End */
+
+/* ============================ Mixins Css End ============================ */

@@ -1,0 +1,213 @@
+//footer-area
+.footer__social {
+   & a {
+        background-color: rgba(255, 114, 58, 0.1);
+        width: 39px;
+        height: 39px;
+        font-size: 16px;
+        line-height: 39px;
+        &:hover {
+            color: $white;
+            background-color: $theme-color;
+        }
+    }
+} 
+
+.footer__widget{
+    & .widget-title {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+.fot-list {
+   & a {
+        color: $body-text-color;
+        display: inline-block;
+        margin-bottom: 20px;
+        @include transition(.3s);
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+
+.copy-right-area {
+    &.border-bot {
+        border: 0;
+        border-top: 1px solid rgba(112, 112, 112, 0.1);
+    }
+
+    & .copyright {
+        & h5 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            & a {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+.border-bot {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.1);
+}
+.border-bot-2 {
+    border-bottom: 1px solid rgba(255, 114, 58, 0.2);
+}
+
+
+.footer-area-2 {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        position:absolute;
+        width: 515px;
+        height: 552px;
+        background: #f14d5d;
+        opacity: 0.03;
+        filter: 50px;
+        -webkit-filter: blur(50px);
+        -moz-filter: blur(50px);
+        -o-filter: blur(50px);
+        right: 20.57%;
+        bottom: 65px;
+        z-index: -1;
+    }
+    & .widget-title {
+        text-transform: capitalize;
+    }
+}
+.footer__widget__two {
+   
+    & .mail-to {
+        color: $theme-color;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    & .phone-num {
+        color: $heding;
+    }
+
+   & .subscribe-form-box {
+        & .subscribe-form {
+            & input {
+                font-size: 14px;
+                color: $body-text-color;
+                width: 300px;
+                height: 50px;
+                padding-left: 30px;
+                @media #{$laptop} {
+                    width: 100%;
+                }
+                @media #{$xs} {
+                    width: 100%;
+                }
+            }
+        }
+
+        & .sub_btn {
+            padding: 19px 51px;
+            background-color: $theme-color;
+            position: unset;
+            width: 300px;
+            @media #{$laptop} {
+                width: 100%;
+            }
+            @media #{$lg} {
+                width: 100%;
+            }
+
+            @media #{$md} {
+                width: 100%;
+            }
+
+            @media #{$xs} {
+                width: 100%;
+            }
+        }
+    }
+   & .footer__social {
+        & a {
+            background-color: $white;
+            &:hover {
+                color: $white;
+                background-color: $theme-color;
+            }
+        }
+   } 
+
+}
+
+.border-bot-top {
+     border-top: 1px solid rgba(255, 114, 58, 0.2);
+
+}
+.copyright {
+    & .fot-list {
+        & li {
+            display: inline-block;
+            margin-left: 55px;
+            @media #{$lg} {
+                margin-left: 40px;
+            }
+            @media #{$md} {
+                margin-left: 20px;
+            }
+            @media #{$md} {
+                margin-left: 0px;
+                margin-right: 5px;
+            }
+            @media #{$xs} {
+                margin-left: 0px;
+                margin-right: 20px;
+            }
+            & a {
+                color: $heding2;
+            }
+        }
+    } 
+}
+
+.footer-bg {
+    background-color: rgba(255, 114, 58, 0.03);
+}
+.footer-area {
+    position: relative;
+    z-index: 1;
+    .footer-blur {
+        width: 583px;
+        height: 619px;
+        background: #f14d5d;
+        opacity: 0.05;
+        filter: blur(50px);
+        -webkit-filter: blur(50px);
+        -moz-filter: blur(50px);
+        -o-filter: blur(50px);
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        border-radius: 50%;
+    }
+}
+.footer-area-2 {
+    & .footer-blur-bg {
+        width: 515px;
+        height: 552px;
+        background: #f14d5d;
+        opacity: 0.03;
+        filter: blur(50px);
+        -webkit-filter: blur(50px);
+        -moz-filter: blur(50px);
+        -o-filter: blur(50px);
+        position: absolute;
+        right: 20.57%;
+        bottom: 65px;
+        z-index: -1;
+    }
+}

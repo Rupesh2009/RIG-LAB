@@ -1,0 +1,280 @@
+/* Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+$colors: (
+  "main": (
+    "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
+    "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
+    "200": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7)),
+    "300": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.6)),
+    "400": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.5)),
+    "500": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.4)),
+    "600": hsl(var(--main-h), var(--main-s), var(--main-l)), // main theme color
+    "700": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.1)),
+    "800": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.2)),
+    "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))
+  ),
+  "main-two": (
+    "50": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)),
+    "100": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8)),
+    "200": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7)),
+    "300": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.6)),
+    "400": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.5)),
+    "500": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.4)),
+    "600": hsl(var(--main-two-h), var(--main-two-s), var(--main-two-l)), // main-two theme color
+    "700": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1)),
+    "800": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2)),
+    "900": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3))
+  ),
+  
+  "gray": (
+    "50": #ECF1F9,
+    "100": #D5DBE7,
+    "200": #7585A5,
+    "300": #667797,
+    "400": #3B465E,
+    "500": #0F141E,
+    "600": #0C1018,
+    "700": #090C12,
+    "800": #06080C,
+    "900": #06080C,
+    "950": #020203,
+  ),
+
+  "light": (
+    "50": #F5F6FA,
+    "100": #F3F4F6,
+    "600": #E4F1FF,
+    "700": #374151,
+    "800": #1F2937,
+  ),
+  
+  "primary": (
+    "50": #E4F1FF,
+    "100": #BFDCFF,
+    "200": #95C7FF,
+    "300": #6BB1FF,
+    "400": #519FFF,
+    "500": #458EFF,
+    "600": #487FFF,
+    "700": #486CEA,
+    "800": #4759D6,
+    "900": #4536B6
+  ),
+
+  "danger": (
+    "50": #FEF2F2,
+    "100": #FEE2E2,
+    "200": #FECACA,
+    "300": #FCA5A5,
+    "400": #F87171,
+    "500": #EF4444,
+    "600": #EA5455,
+    "700": #B91C1C,
+    "800": #991B1B,
+    "900": #7F1D1D
+  ),
+
+  "success": (
+    "50": #DCFCE7,
+    "100": #DCFCE7,
+    "200": #BBF7D0,
+    "300": #86EFAC,
+    "400": #4ADE80,
+    "500": #22C55E,
+    "600": #16A34A,
+    "700": #15803D,
+    "800": #166534,
+    "900": #14532D
+  ),
+
+  "warning": (
+    "50": #FFF5ED,  
+    "100": #FEF9C3,
+    "200": #FEF08A,
+    "300": #FDE047,
+    "400": #FACC15,
+    "500": #EAB308,
+    "600": #FF9F43,
+    "700": #f39016,
+    "800": #e58209,
+    "900": #d77907
+  ),
+
+  "info": (
+    "50": #EFF6FF,
+    "100": #DBEAFE,
+    "200": #BFDBFE,
+    "300": #93C5FD,
+    "400": #60A5FA,
+    "500": #3B82F6,
+    "600": #00CFE8,
+    "700": #1D4ED8,
+    "800": #1E40AF,
+    "900": #1E3A8A
+  ),
+
+  "purple": (
+    "50": #EFECFF,
+    "100": #DBEAFE,
+    "200": #BFDBFE,
+    "300": #93C5FD,
+    "400": #60A5FA,
+    "500": #3B82F6,
+    "600": #6142FF,
+    "700": #1D4ED8,
+    "800": #1E40AF,
+    "900": #1E3A8A
+  ),
+  "teal": (
+    "50": #ecfcff,
+    "100": #daf3f7,
+    "600": #17A2B8,
+  ),
+  "green": (
+    "50": #dbffdb,
+    "100": #b7f7b7,
+    "600": #009500,
+  ),
+  "pink": (
+    "50": #fae4e8,
+    "100": #ffc7d0,
+    "600": #ff6e84,
+  ),
+  "facebook": (
+    "50": hsla(220, 46%, 48%, 0.16),
+    "600": #4267B2,
+  ),
+  "twitter": (
+    "50": hsla(203, 89%, 53%, 0.16),
+    "600": #1DA1F2,
+  ),
+  "google": (
+    "50": hsla(5, 69%, 54%, 0.16),
+    "600": #DB4437,
+  ),
+  "dribble": (
+    "50": #FFECF4,
+    "600": #EA4C89,
+  ),
+);
+
+// Space
+$spaces: (
+  "2": #{rem(2px)},
+  "3": #{rem(3px)},
+  "4": #{rem(4px)},
+  "5": #{rem(5px)},
+  "6": #{rem(6px)},
+  "7": #{rem(7px)},
+  "8": #{rem(8px)},
+  "9": #{rem(9px)},
+  "10": #{rem(10px)},
+  "11": #{rem(11px)},
+  "12": #{rem(12px)},
+  "13": #{rem(13px)},
+  "14": #{rem(14px)},
+  "15": #{rem(15px)},
+  "16": #{rem(16px)},
+  "18": #{rem(18px)},
+  "19": #{rem(19px)},
+  "20": #{rem(20px)},
+  "22": #{rem(22px)},
+  "24": #{rem(24px)},
+  "26": #{rem(26px)},
+  "28": #{rem(28px)},
+  "30": #{rem(30px)},
+  "32": #{rem(32px)},
+  "36": #{rem(36px)}, 
+  "38": #{rem(38px)}, 
+  "40": #{rem(40px)}, 
+  "44": #{rem(44px)}, 
+  "48": #{rem(48px)},
+  "50": #{rem(50px)},
+  "54": #{rem(54px)},
+  "56": #{rem(56px)},
+  "64": #{rem(64px)},
+  "68": #{rem(68px)},
+  "72": #{rem(72px)},
+  "76": #{rem(76px)},
+  "80": #{rem(80px)},
+  "88": #{rem(88px)},
+  "90": #{rem(90px)},
+  "110": #{rem(110px)},
+  "114": #{rem(114px)},
+  "120": #{rem(120px)},
+  "144": #{rem(144px)},
+  "160": #{rem(160px)},
+  "164": #{rem(164px)},
+  "190": #{rem(190px)},
+);
+
+$font-sizes: (
+  "xs": #{rem(12px)},
+  "sm": #{rem(14px)},
+  "md": #{rem(16px)},
+  "lg": #{rem(18px)},
+  "xl": #{rem(20px)},
+  "2xl": #{rem(24px)},
+  "3xl": #{rem(30px)},
+  "4xl": #{rem(36px)},
+  "5xl": #{rem(48px)},
+  "6xl": #{rem(60px)},
+);
+
+/* ========================= Variable Css Start ======================== */
+:root {    
+  /* Font Family Variable */
+  --heading-font: "Urbanist", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  
+  /* Font Size Variable Start */
+  --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 2.375rem); // Min:32px - Max:38px
+  --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2rem); // Min: 28px - Max: 32px
+  --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 1.625rem); // Min: 24px - Max: 26px
+  --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 1.375rem); // Min: 20px - Max: 22px
+  --heading-five: clamp(1rem, 1.2rem + 0.722vw, 1.125rem); // Min: 16px - Max: 18px
+  --heading-six: 0.9375rem;  // 16px
+  /* Font Size End */
+
+  /* template main color */
+  --main-h: 219;
+  --main-s: 94%;
+  --main-l: 61%;
+  --main: var(--main-h) var(--main-s) var(--main-l);
+
+  /* template main color */
+  --main-two-h: 166;
+  --main-two-s: 68%;
+  --main-two-l: 48%;
+  --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+
+   /* White Color */
+  --white: 0 0% 100%;
+  --black: 220 33% 9%;
+  --light: 180 45% 94%;
+  
+  --heading-color: var(--black);
+  --body-color: var(--gray-600);
+  --body-bg: var(--gray);
+  --border-color: 236 13% 77%;
+  --section-bg: 210 25% 97%;
+    
+  // spacing
+  @each $property, $value in $spaces {
+    --size-#{$property}: #{$value};
+  }
+  
+  // Colors
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  // font sizes
+  @each $property, $value in $font-sizes {
+    --font-#{$property}: #{$value};
+  }  
+}
+/* ========================= Variable Css End ======================== */

@@ -1,0 +1,11 @@
+/* ========================== Dashboard Footer Css Start ================================== */
+.dashboard-footer {
+    margin-top: auto;
+    padding: 20px;
+    border-radius: 16px 16px 0 0;
+    background-color: hsl(var(--white));
+    @include md-screen {
+        padding: 12px;
+    }
+}
+/* ========================== Dashboard Footer Css End ================================== */

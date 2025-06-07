@@ -1,0 +1,182 @@
+/* Full Calendar Customize Css Start */
+.fc-border-separate tr.fc-last th {
+    background-color: hsl(var(--white));
+    padding: 12px;
+    color: var(--text-main-light);
+    a {
+      transition: 0s;
+    }
+  }
+  
+  .fc-day.fc-tue.fc-widget-content.fc-today.fc-state-highlight {
+    position: relative;
+    background: linear-gradient(
+        180deg,
+        rgba(72, 127, 255, 0.13) 0%,
+        rgba(72, 127, 255, 0.12) 0.01%,
+        rgba(72, 127, 255, 0.05) 100%
+      );
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: var(--main-600);
+      }
+  }
+  
+  .fc-event {
+    border: 0;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--main-50) !important;
+    color: var(--main-600) !important;
+    &.important {
+      background-color: var(--danger-100) !important;
+      color: var(--danger-600) !important;
+    }
+    &.info {
+      background-color: var(--warning-100) !important;
+      color: var(--warning-600) !important;
+    }
+  }
+  .fc-border-separate tr.fc-last th {
+    border-color: var(--gray-100) !important;
+  }
+  
+  table.fc-header, #calendar {
+    background-color: transparent;
+  }
+  .fc-week .fc-day:hover .fc-day-number {
+    background-color: var(--main-100) !important;
+    color: var(--main-600) !important;
+  }
+  
+  .fc-state-highlight>div>div.fc-day-number {
+    background-color: var(--main-600) !important;
+    color: #fff !important;
+  }
+  
+  #calendar, table.fc-header {
+    background-color: transparent !important;
+  }
+  .fc-header-title h2 {
+    font-size: 24px !important;
+    font-weight: 600;
+    padding-left: 144px;
+  }
+  .fc-state-default {
+    border-color: var(--main-600) !important;
+    color: var(--main-600) !important;
+    &:hover {
+      background-color: var(--main-50) !important;
+    }
+  }
+  
+  .fc-state-active, .fc-state-down {
+    background-color: var(--main-600) !important;
+    color: #fff !important;
+    &:hover {
+      color: #fff !important;
+    background-color: var(--main-600) !important;  }
+  }
+  // .fc-button.fc-button-month.fc-state-default.fc-state-active
+  
+  .fc-button.fc-button-today {
+    border-color: var(--main-100) !important;
+    background-color: var(--main-100) !important;
+    color: var(--main-600) !important;
+    &.fc-state-disabled {
+      border-color: var(--main-600) !important;
+      background-color: var(--main-600) !important;
+      color: #fff !important;
+      cursor: no-drop;
+    }
+  }
+  
+  td.fc-header-center {
+    text-align: end;
+  }
+  .fc-widget-content {
+    border-color:  var(--gray-100)!important;
+  }
+  .fc-last  td {
+    border-width: 1px 0 1px 1px;
+  }
+  
+  .fc-agenda-axis.fc-widget-header {
+    color: var(--text-main-light);
+    border-color: var(--gray-100);
+  }
+  .fc-header td {
+    padding: 0;
+    min-width: max-content;
+  }
+  
+  #wrap {
+    overflow-x: auto;
+  }
+  
+  #calendar {
+        min-width: max-content;
+        .fc-header tr {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            justify-content: space-between;
+        }
+}
+
+  .fc-button {
+    text-transform: capitalize;
+}
+
+
+#calendar .fc-content {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.fc-border-separate tr.fc-last th:first-child {
+    border-radius: 24px 0 0 0;
+}
+
+.fc-border-separate tr.fc-last th:last-child {
+    border-radius: 0 24px 0 0;
+}
+
+.fc-border-separate tr:last-child td:first-child {
+    border-radius: 0 0 0 24px;
+}
+
+.fc-border-separate tr:last-child td:last-child {
+    border-radius: 0 0 24px 0;
+}
+
+.fc-button.fc-button-agendaDay.fc-state-default.fc-corner-left {
+    border-right: 0;
+}
+
+.fc-event-vert.fc-event-end {
+    border: 1px solid var(--main-600);
+    border-radius: 10px;
+    border-left-width: 3px;
+}
+.fc-event.important {
+    border-color: var(--danger-600);
+}
+.fc-event.info {
+    border-color: var(--warning-600);
+}
+
+#wrap {
+  padding-top: 8px;
+}
+.add-event {
+    position: absolute;
+    inset-block-start: -8px;
+    inset-inline-start: 0;
+}
+/* Full Calendar Customize Css End */
+  

@@ -1,0 +1,62 @@
+/* ============================== Live Class Css Start ========================= */
+.sub-comment-list {
+    margin-inline-start: clampCal(16, 24);
+}
+
+.lesson-list {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: calc(100% - 26px);
+        inset-inline-start: 8px;
+        inset-block-start: 0;
+        border: 1px dashed var(--main-100);
+        z-index: -1;
+    }
+    &__item {
+        padding-bottom: clampCal(24, 68);
+        &:last-child {
+            padding-bottom: 0;
+        }
+        .circle {
+            position: relative;
+            background-color: hsl(var(--white));
+            &::before {
+                position: absolute;
+                content: "";
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                inset-inline-start: 50%;
+                inset-block-start: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid var(--main-100);
+                border-radius: inherit;
+            }
+        }
+
+        &.active {
+            .circle {
+                color: var(--main-600) !important;
+                &::before {
+                    border-color: var(--main-600);
+                }
+            }
+        }
+    }
+}
+
+.live-badge {
+    @include md-screen {
+        margin-block-start: 16px !important;
+        margin-inline-start: 16px !important;
+        padding: 4px 16px !important;
+    }
+    @include msm-screen {
+        margin-block-start: 8px !important;
+        margin-inline-start: 8px !important;
+    }
+}
+/* ============================== Live Class Css End ========================= */

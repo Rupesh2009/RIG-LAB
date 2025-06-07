@@ -1,0 +1,179 @@
+/* ============================= Sidebar Css Start ============================ */
+.sidebar {
+  width: 252px;
+  position: fixed;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  background-color: hsl(var(--white));
+  border-right: 1px solid var(--gray-100);
+  height: 100%;
+  @include lg-screen {
+    transform: translateX(-100%);
+    z-index: 99;
+    transition: .2s linear;
+  }
+  &.active {
+    transform: translateX(0);
+  }
+
+  &-close-btn {
+    inset-inline-end: 8px;
+    inset-block-start: 8px;
+  }
+}
+
+[dir="rtl"] {
+  .sidebar {
+    @include lg-screen {
+      transform: translateX(100%);
+    }
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+.sidebar-menu-wrapper {
+  max-height: calc(100vh - 62px) !important;
+}
+
+/* Sidebar Css Start */
+.sidebar-menu {
+  &__item {
+    &:not(:last-child) {
+      margin-block-end: 12px;
+    }
+    &.activePage {
+      .sidebar-menu {
+        &__link {
+          background-color: hsl(var(--main));
+          color: hsl(var(--white));
+          &::before {
+            color: hsl(var(--white)) !important;
+            transform: translateY(-50%) rotate(90deg) !important;
+          }
+          .link-badge {
+            background-color: hsl(var(--white));
+            color: var(--main-600);
+          }
+        }
+      }
+    }
+
+    &:has(.sidebar-submenu__item.activePage) {
+      .sidebar-menu {
+        &__link {
+          background-color: var(--main-600);
+          color: hsl(var(--white));
+          &::before {
+            color: hsl(var(--white)) !important;
+          }
+          .link-badge {
+            background-color: hsl(var(--white));
+            color: var(--main-600);
+          }
+        }
+      }
+    }
+    
+    &.has-dropdown {
+      .sidebar-menu {
+        &__link {
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "\E13A";
+            font-family: "Phosphor";
+            inset-inline-end: 20px;
+            inset-block-start: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-200);
+            font-size: 15px;
+            width: 7px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .2s linear;
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: var(--gray-300);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: capitalize;
+    &:hover {
+      color: hsl(var(--main));
+      background-color: var(--main-50);
+    }
+    .icon {
+      font-size: 24px;
+      line-height: 1;
+      display: flex;
+    }
+    .link-badge {
+      width: 22px;
+      height: 22px;
+      background-color: var(--main-100);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 13px;
+      margin-inline-start: auto;
+      margin-inline-end: 18px;
+    }
+  }
+}
+/* Sidebar Css End */
+
+/* Sidebar Submenu Css Start */
+.sidebar-submenu {
+  margin-inline-start: 24px;
+  margin-top: 12px;
+  display: none;
+  &__item {
+    margin-bottom: 12px;
+    &.activePage {
+      .sidebar-submenu {
+        &__link {
+          color: var(--main-600);
+          font-weight: 600;
+        }
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    padding: 2px 18px;
+    color: var(--gray-200);
+    font-size: rem(13px);
+    display: block;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      inset-inline-start: 0;
+      inset-block-start: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 2px;
+      background-color: var(--gray-100);
+      border-radius: 30px;
+    }
+  }
+}
+/* Sidebar Submenu Css End */
+
+.centerised-img {
+  transform: translate(4px, 14px);
+}
+/* ============================= Sidebar Css End ============================ */

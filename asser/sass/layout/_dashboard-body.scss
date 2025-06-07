@@ -1,0 +1,39 @@
+/* ===================== Dashboard Main wrapper css start ========================= */
+.dashboard-main-wrapper {
+    margin-inline-start: 252px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    transition: .2s linear; 
+    background-color: var(--main-50);
+    @include lg-screen {
+        margin-inline-start: 0px;
+    }
+    &.active {
+        margin-inline-start: rem(78px);
+    }
+}
+
+.dashboard-body {
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+}
+
+.top-navbar, .dashboard-body {
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    @include xxl-screen {
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+}
+.dashboard-footer {
+    margin-inline-start: 24px;
+    margin-inline-end: 24px;
+    @include lg-screen {
+        margin-inline-start: 16px;
+        margin-inline-end: 16px;
+    }
+}
+/* ===================== Dashboard Main wrapper css End ========================= */
